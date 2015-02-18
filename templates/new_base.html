@@ -1,0 +1,465 @@
+{% load verbatim_templatetag %}
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>{% block head_title %}{% endblock %}</title>
+        <link href="{{ STATIC_URL }}stylesheets/jquery-ui.css" rel="stylesheet" type="text/css" />
+        <link href="{{ STATIC_URL }}stylesheets/jquery.jscrollpane.css" rel="stylesheet" type="text/css" />
+        <link href="{{ STATIC_URL }}stylesheets/bootstrap.css" rel="stylesheet" type="text/css" />
+        <link href="{{ STATIC_URL }}stylesheets/style.css" rel="stylesheet" type="text/css" />
+        <link href="{{ STATIC_URL }}stylesheets/fcbkcomplete.style.css" rel="stylesheet" type="text/css" />
+
+        <link href="{{ STATIC_URL }}stylesheets/custom.css" type="text/css" rel="stylesheet" media="all" />
+
+        <script src="{{ STATIC_URL }}js/jquery.js"></script>
+        <script src="{{ STATIC_URL }}js/imgLiquid-min.js"></script>
+        {% block header_js %}
+        {% endblock %}
+    </head>
+    <body>
+        <div id="header">
+          <div class="menu">
+            <ul>
+              {% if not user.is_authenticated %}
+              <li><a data-toggle="modal" href="#acc_login">Sign in</a></li>
+              <li><a data-toggle="modal" href="#acc_register" title="">Register </a></li>
+              {% endif %}
+              {% if user.is_authenticated %}
+              <li><a href="#" title="" id="profile_menu_area" class="btn dropdown-toggle test_transform_none" data-toggle="dropdown" data-hover="dropdown"
+                      style="background: none;border-width: 0px;box-shadow:0 0 0px rgba(0,0,0,0.8);border-radius:0px;color: white;float: right;height: 33px;">
+                    <div class="profile_user_name">
+                    {% if user.first_name|length > 0 %}
+                        {{ user.first_name }}
+                    {% else %}
+                        {{ user.email }}
+                    {% endif %}
+                    &nbsp;&nbsp;&#9660;
+                    </div>
+                {% if user.userpreferences_set.all.0.ProfilePicturePath %}
+                  <img src="{{ MEDIA_URL }}{{ user.userpreferences_set.all.0.ProfilePicturePath }}" alt="" style="width:30px;height:30px;max-height: 30px;position: relative;margin-top:-3px;margin-right: 7px;"/>
+                {% endif %}
+                {% if not user.userpreferences_set.all.0.ProfilePicturePath %}
+                 <img src="{{ STATIC_URL }}images/user.png" class="user_profile_img" alt="" style="width:30px;height:30px;max-height: 30px;position: relative;margin-top:-3px;margin-right: 7px;"/>
+                {% endif %}
+                  </a>
+                <ul class="dropdown-menu triangle-isosceles top" style="position: absolute;margin-top:6px;float: right;padding-top: 6px;padding-bottom: 6px;">
+                  <li><a href="#">My Lists </a></li>
+                  <li><a href="/user_setting">Preferences </a></li>
+                  <li><a href="#">Privacy </a></li>
+                  {% if user.facebook_id %}
+                  <li>
+                    <form action="{% url 'facebook_disconnect' %}" method="post" id="id_fb_logout_form">
+                        {% csrf_token %}
+                        <input type="hidden" value="/" name="next" />
+                      <a href="#" onclick="on_fb_logout();">Log out</a>
+                    </form>
+                  </li>
+                  {% endif %}
+                  {% if not user.facebook_id %}
+                  <li>
+                      <a href="#" id="id_logout" onclick="on_logout();">Log out</a>
+                  </li>
+                  {% endif %}
+                </ul>
+              </li>
+              {% endif %}
+            </ul>
+          </div>
+          <div class="logo" style=""><a href="/"><img src="{{ STATIC_URL }}images/logo.png" alt="" style=""/></a></div>
+          <div class="search">
+            <input type="text" onblur="if (this.value == '') {this.value = 'Search...';}"
+         onfocus="if (this.value == 'Search...') {this.value = '';}"  name="search" id="search" value="Search..." />
+          </div>
+        {% block invite_friends %}
+        {% endblock %}
+        </div>
+
+        {% block body_content %}
+        {% endblock %}
+        <div class="modal fade" onKeyPress="return login_checkSubmit(event)" id="acc_login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              </div>
+              <div class="modal-body">
+                <div class="content-account">
+                      <div class="account-login">
+                        <h2>Sign In</h2>
+                        <p class="fields row">
+                            <div class="alert alert-danger" id="id_login_validmsg" style="display: none;">Login failed! Please input valid email and password.</div>
+                        </p>
+                       <form name="loginfrm" id="loginfrm" method="post">{% csrf_token %}
+                        <p class="fields row">
+                          <label for="email">User email</label>
+                          <input type="text" name="username" id="id_login_email" class="col-lg-12" />
+                        </p>
+                        <p class="fields row">
+                          <label for="password">Password</label>
+                          <input type="password" name="password" id="id_login_password" class="col-lg-12"/>
+                        </p>
+                        <p class="fields text-right">
+                            <a href="{% url 'password_reset' %}" style="float: left;margin-left: 147px;margin-top: 19px;">Forgot password?</a>&nbsp;
+                          <input type="submit" name="submit" class="btn btn-blue" value="Login" id="login_btn"/>
+                        </p>
+                       </form>
+                        <div class="login-with-facebook">
+                          <p class="text-center">
+                              <form action="{% url 'facebook_connect' %}" method="post">
+                                {% csrf_token %}
+                                <input type="hidden" value="/" name="next" />
+                              <a href="#" id="id_login_with_fb" onclick="F.connect(this.parentNode); return false;" style="margin-left: 41px;">
+                                  <img src="{{ STATIC_URL }}images/login-with-facebook.png" alt="" />
+                              </a>
+                              </form>
+                          </p>
+                          <p class="text-center">Fast, Easy &amp; Secure!</p>
+                        </div>
+                      </div>
+                </div>
+              </div>
+            </div>
+            <!-- /.modal-content -->
+          </div>
+          <!-- /.modal-dialog -->
+        </div>
+        <div class="modal fade"  onKeyPress="return register_checkSubmit(event)" id="acc_register" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              </div>
+              <div class="modal-body">
+                <div class="content-account">
+                      <div class="account-register">
+                        <h2>Create An Account</h2>
+                        <p class="text-center">
+                          <form action="{% url 'facebook_connect' %}" method="post">
+                            {% csrf_token %}
+                            <input type="hidden" value="/" name="next" />
+                              <a href="#" id="id_login_with_fb" onclick="F.connect(this.parentNode); return false;" style="margin-left: 41px;">
+                                  <img src="{{ STATIC_URL }}images/login-with-facebook.png" alt="" />
+                              </a>
+                          </form>
+                        </p>
+                        <p class="text-center">
+                          Fast, Easy &amp; Secure!
+                        </p>
+                        <p>&nbsp;</p>
+                        <center>
+                          <b>OR</b>
+                        </center>
+                        <p class="fields row">
+                            <div class="alert alert-danger" id="id_signup_validmsg" style="display: none;">Please input valid email and password.</div>
+                            <div class="alert alert-danger" id="id_signup_validmsg2" style="display: none;">Password should be the same with Verify Password.</div>
+                            <div class="alert alert-danger" id="id_signup_validmsg3" style="display: none;">You need to agree to the terms of service and privacy policy.</div>
+                            <div class="alert alert-danger" id="id_signup_validmsg4" style="display: none;">Email address already exists.</div>
+                            <div class="alert alert-danger" id="id_signup_validmsg5" style="display: none;">Please enter a valid email.</div>
+                        </p>
+                        <p class="fields row">
+                          <label for="email">Email</label>
+                            <input type="email" name="email" class="col-lg-12"  id="id_email" />
+                        </p>
+                        <p class="fields row">
+                          <label for="password1">Password</label>
+                            <input type="password" name="password1" class="col-lg-12" id="id_password1"/>
+                        </p>
+                        <p class="fields row">
+                          <label for="password2">Verify Password</label>
+                          <input type="password" name="password2" class="col-lg-12" id="id_password2"/>
+                        </p>
+                        <p class="checkbox"><span >
+                          <input type="checkbox" name="mailchimp" id="id_mailchimp" checked="checked"/>
+                          Check here to receive personalized emails from BoredShopper </span></p>
+                        <p class="checkbox"><span >
+                          <input type="checkbox" id="id_agree_terms"/>
+                          I have read and agree to the <a href="#">terms of
+                          service</a> and <a href="#">privacy policy</a>. </span></p>
+                        <p>
+                          <input type="button" id="signup_btn"  class="btn btn-orange" value="CREATE ACCOUNT" />
+                        </p>
+                      </div>
+                </div>
+              </div>
+            </div>
+            <!-- /.modal-content -->
+          </div>
+          <!-- /.modal-dialog -->
+        </div>
+        <div class="modal fade" id="acc_invitation" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h2 class="text-center">Invite Your Friends to Bored Shopper</h2>
+              </div>
+              <div class="modal-body">
+                <div class="share-form">
+                  <div class="social-bttns">
+                      <a class="btn-fb-share" id="fb_share_btn" title="Share on Facebbok" ></a>
+                      <a class="btn-gmail-share" title="Share on twitter"></a> </div>
+                  <div class="social-share-fields">
+                    <p class="row">
+                        <div class="alert alert-danger" id="id_fb_share_failed" style="display: none;">Facebook share failed.</div>
+                        <div class="alert alert-success" id="id_fb_share_success" style="display: none;">Facebook share successful done.</div>
+                    </p>
+                    <p class="row">
+                      <label for="to" class="col-lg-3">Freind's Email</label>
+                      <input type="text" name=""  class="col-lg-9"/>
+                    </p>
+                    <p class="row">
+                      <label for="to" class="col-lg-3">Freind's Email</label>
+                      <input type="text" name=""  class="col-lg-9"/>
+                    </p>
+                    <p class="row">
+                      <label for="to" class="col-lg-3">Freind's Email</label>
+                      <input type="text" name=""  class="col-lg-9"/>
+                    </p>
+                    <p class="row">
+                      <label for="to" class="col-lg-3">Freind's Email</label>
+                      <input type="text" name=""  class="col-lg-9"/>
+                    </p>
+                    <p class="row">
+                      <label for="to" class="col-lg-3">Freind's Email</label>
+                      <input type="text" name=""  class="col-lg-9"/>
+                    </p>
+                    <p class="row">
+                      <label for="to" class="col-lg-3">Message for Your Friend</label>
+                      <textarea name=""  class="col-lg-9"></textarea>
+                    </p>
+                    <p class="row">
+                      <label class="col-lg-3">&nbsp;</label>
+                      <input type="submit" value="Send" class="btn btn-blue"  />
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /.modal-content -->
+          </div>
+          <!-- /.modal-dialog -->
+        </div>
+        <script src="{{ STATIC_URL }}js/bootstrap.min.js"></script>
+        <script src="{{ STATIC_URL }}js/dropdown.js"></script>
+        <script src="{{ STATIC_URL }}js/jquery-ui.js"></script>
+        <script src="{{ STATIC_URL }}js/jquery.jscrollpane.min.js"></script>
+        <script src="{{ STATIC_URL }}js/jquery.mousewheel.js"></script>
+        <script src="{{ STATIC_URL }}js/handlebars.js"></script>
+        <script src="{{ STATIC_URL }}js/waterfall.min.js"></script>
+        <script src="{{ STATIC_URL }}js/custom.js"></script>
+
+        {% block footer_js %}
+        {% endblock %}
+
+        <script type="text/javascript">
+            function validateEmail(sEmail) {
+                var filter = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+                if (filter.test(sEmail)) {
+                    return true;
+                }
+                else {
+                    return false;
+                }
+            }
+            function register_checkSubmit(e)
+            {
+               if(e && e.keyCode == 13)
+               {
+                  $( "#signup_btn" ).trigger( "click" );
+               }
+            }
+            function login_checkSubmit(e)
+            {
+               if(e && e.keyCode == 13)
+               {
+                  $( "#login_btn" ).trigger( "click" );
+               }
+            }
+            $(document).ready(function(){
+
+                $("#fb_share_btn").click(function(){
+                    var url = "{% url 'facebook_wall_post' %}";
+                    var message = "Sorry, Check out fashiolista.com, loving it. This is 4th.";
+                    ajax_req = $.ajax({
+                        url: url,
+                        type: "POST",
+                        data: {
+                            message: message
+                        },
+                        success: function(data){
+                            if(data.return_code == "success")
+                            {
+                                $('#id_fb_share_success').css("display", "block");
+                                return;
+                            }
+                            else if(data.return_code == "invalid_message")
+                            {
+                                $('#id_fb_share_failed').css("display", "block");
+                                return;
+                            }
+                        },
+                        error: function(data){
+                            alert("error occured!");
+                        }
+                    });
+                });
+
+                $('#loginfrm').submit( function(event){
+                    event.preventDefault();
+                    if(event.handled !== true)
+                    {
+                        event.handled = true;
+                        //alert("loginfrm submit called");
+                        if($("#id_login_email").val() == "" || $("#id_login_password").val() == "")
+                        {
+                            $('#id_login_validmsg').css("display", "block");
+                            return;
+                        }
+                        var url = "{% url 'django.contrib.auth.views.ajax_login' %}";
+                        //alert("before ajax!");
+                        ajax_req = $.ajax({
+                            url: url,
+                            type: "POST",
+                            data: {
+                                username: $("#id_login_email").val(),
+                                password: $("#id_login_password").val()
+                            },
+                            success: function(data){
+
+                                if(data.return_code == "success")
+                                {
+                                    $('#acc_login').modal('hide');
+                                    $( 'body' ).addClass( 'home');
+                                    //alert("success1!");
+                                    document.location.href = "/";
+                                }
+                                else
+                                {
+                                    $('#id_login_validmsg').css("display", "block");
+                                    //alert(data.return_code);
+                                    //alert("success2!");
+                                }
+                            },
+                            error: function(data){
+                                console.log(data);
+                                //alert("error occured!");
+                            }
+                        });
+                    }
+                    return false;
+                });
+
+                $( "#signup_btn" ).click(function() {
+                    //alert("signup called!");
+                    if($("#id_email").val() == "" || $("#id_password1").val() == "" ||
+                    $("#id_password2").val() == "")
+                    {
+                        $('#id_signup_validmsg').css("display", "block");
+                        $('#id_signup_validmsg2').css("display", "none");
+                        $('#id_signup_validmsg3').css("display", "none");
+                        $('#id_signup_validmsg4').css("display", "none");
+                        $('#id_signup_validmsg5').css("display", "none");
+                        return;
+                    }
+                    if(!validateEmail($("#id_email").val()))
+                    {
+                        $('#id_signup_validmsg').css("display", "none");
+                        $('#id_signup_validmsg2').css("display", "none");
+                        $('#id_signup_validmsg3').css("display", "none");
+                        $('#id_signup_validmsg4').css("display", "none");
+                        $('#id_signup_validmsg5').css("display", "block");
+                        return;
+                    }
+                    if($("#id_password1").val() != $("#id_password2").val() )
+                    {
+                        $('#id_signup_validmsg').css("display", "none");
+                        $('#id_signup_validmsg2').css("display", "block");
+                        $('#id_signup_validmsg3').css("display", "none");
+                        $('#id_signup_validmsg4').css("display", "none");
+                        $('#id_signup_validmsg5').css("display", "none");
+                        return;
+                    }
+                    if($("#id_agree_terms").is(':checked') == false)
+                    {
+                        $('#id_signup_validmsg').css("display", "none");
+                        $('#id_signup_validmsg2').css("display", "none");
+                        $('#id_signup_validmsg3').css("display", "block");
+                        $('#id_signup_validmsg4').css("display", "none");
+                        $('#id_signup_validmsg5').css("display", "none");
+                        return;
+                    }
+                    $('#id_signup_validmsg').css("display", "none");
+                    $('#id_signup_validmsg2').css("display", "none");
+                    $('#id_signup_validmsg3').css("display", "none");
+                    $('#id_signup_validmsg4').css("display", "none");
+                    $('#id_signup_validmsg5').css("display", "none");
+
+                    var mailchimp_val = $("#id_mailchimp").is(':checked');
+
+                    var url = "{% url 'bshopper_app.views.ajax_signup' %}";
+                    ajax_req = $.ajax({
+                        url: url,
+                        type: "POST",
+                        data: {
+                            email: $("#id_email").val(),
+                            password1: $("#id_password1").val(),
+                            password2: $("#id_password2").val(),
+                            FirstName: "",
+                            LastName: "",
+                            Gender: "n",
+                            BirthDay: "1900-01-01",
+                            mailchimp: mailchimp_val
+                        },
+                        success: function(data){
+                            if(data.return_code == "email_exist")
+                            {
+                                $('#id_signup_validmsg4').css("display", "block");
+                                return;
+                            }
+                            $('#acc_register').modal('hide');
+                            $( 'body' ).addClass( 'home');
+                            document.location.href = "/";
+                        },
+                        error: function(data){
+                            alert("error occured!");
+                        }
+                    });
+                });
+            });
+
+            function on_fb_logout()
+            {
+                $('#id_fb_logout_form').submit();
+            }
+            function on_logout()
+            {
+                var url = "{% url 'django.contrib.auth.views.ajax_logout' %}";
+                ajax_req = $.ajax({
+                    url: url,
+                    type: "POST",
+                    data: {
+                        username: $("#id_login_email").val(),
+                        password: $("#id_login_password").val()
+                    },
+                    success: function(data){
+                        if(data.return_code == "success")
+                        {
+                            document.location.href = "/";
+                        }
+                        else
+                        {
+                            alert(data.return_code);
+                        }
+                    },
+                    error: function(data){
+                        alert("error occured!");
+                    }
+                });
+            }
+        </script>
+
+        {% include 'django_facebook/_facebook_js.html' %}
+
+    </body>
+</html>

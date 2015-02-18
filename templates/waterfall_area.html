@@ -1,0 +1,48 @@
+{% for item in result %}
+<div class="item" style="position: relative;width:222px; height:336px;">
+    <div class="imgLiquidFill imgLiquid" style="width:212px; height:326px;">
+        <img src="{{ item.image }}" width="{{ item.width }}" height="{{ item.height }}" />
+    </div>
+
+    <div class="product-details" onclick="on_product_details(this, '{{ item.productId }}');">
+    <h2 id="product_{{ item.productId }}">{{ item.title }}</h2>
+    <div class="product-content">
+
+    <p>
+    {{ item.description }}
+    </p>
+    <p class="price">${{ item.retail_price }}&nbsp;&nbsp;&nbsp;<span class="sale_price">{{ item.sale_price }}</span></p>
+
+    </div>
+
+    </div>
+    <div class="preloader" style="display: none;">
+        <img src="{{ STATIC_URL }}images/loading.gif" class="ajax-loader"/>
+        <div class="rating_product" >Rating Product</div>
+        <div class="undo_for_dislike" onclick="on_oncancel_disliking(this);">cancel</div>
+    </div>
+    <div class="thumbs_rtn_message" style="display: none;">
+        Product Rated!
+    </div>
+    <p class="thumbs">
+        <a href="javascript:void(0);" class="thumb-like {{ item.likeproduct }}" onclick="on_product_like(this, '1', '{{ item.productId }}');"></a>
+        <a href="javascript:void(0);" class="thumb-dislike {{ item.likeproduct }}"  onclick="on_product_like(this, '0', '{{ item.productId }}');"></a>
+    </p>
+    <div class="share">
+        <div class="content-share">
+            <div class="btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                Save
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                </ul>
+            </div>
+            <!--<a data-toggle="modal" href="#acc_share"><img src="{{ STATIC_URL }}images/share.png" alt="" /></a>-->
+            <a href="javascript:void(0);" onclick="on_product_share(this, '{{ item.productId }}');"><img src="{{ STATIC_URL }}images/share.png" alt="" /></a>
+		</div>
+	</div>
+</div>
+{% endfor %}

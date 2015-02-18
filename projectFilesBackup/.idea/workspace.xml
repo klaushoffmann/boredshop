@@ -1,0 +1,1132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" name="Default" comment="" />
+    <ignored path="boredshopper.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <file path="/settings.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1393234632310" ignored="false" />
+    <file path="$PROJECT_DIR$/../../temp/django-email-confirmation-master/devproject/settings.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1377175115031" ignored="false" />
+    <file path="$PROJECT_DIR$/../../temp/django-email-confirmation-master/devproject/urls.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1377159514929" ignored="false" />
+    <file path="/a.dummy" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1394844568991" ignored="false" />
+    <file path="/urls.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1393055066928" ignored="false" />
+    <file path="$PROJECT_DIR$/../../temp/django-email-confirmation-master/devproject/devtest/forms.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1377163279818" ignored="false" />
+    <file path="/forms.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1388714014467" ignored="false" />
+    <file path="$PROJECT_DIR$/../../temp/django-email-confirmation-master/devproject/devtest/views.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1377163445618" ignored="false" />
+    <file path="/views.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1392891308188" ignored="false" />
+    <file path="$PROJECT_DIR$/../../temp/django-email-confirmation-master/emailconfirmation/models.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1377166474652" ignored="false" />
+    <file path="/models.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1393238189419" ignored="false" />
+    <file path="/Django Console" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1393238324103" ignored="false" />
+    <file path="$PROJECT_DIR$/../venv/Lib/site-packages/django/contrib/sites/models.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1377174908325" ignored="false" />
+    <file path="/base.html" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1382968973869" ignored="false" />
+    <file path="/a.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1377225865633" ignored="false" />
+    <file path="/a.coffee" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1377225885191" ignored="false" />
+    <file path="$PROJECT_DIR$/../../temp/Django-facebook-master/facebook_example/facebook_example/settings.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1377314195629" ignored="false" />
+    <file path="$PROJECT_DIR$/../../temp/Django-facebook-master/facebook_example/facebook_example/urls.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1377336422253" ignored="false" />
+    <file path="$PROJECT_DIR$/../../temp/Django-facebook-master/facebook_example/member/views.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1377335736712" ignored="false" />
+    <file path="/fbtest.html" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1377531229276" ignored="false" />
+    <file path="$PROJECT_DIR$/../../temp/Django-facebook-master/facebook_example/member/templates/fbtest.html" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1378011211479" ignored="false" />
+    <file path="/signup.html" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1378086783518" ignored="false" />
+    <file path="/custom.css" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1392977155218" ignored="false" />
+    <file path="/connect.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1377917976649" ignored="false" />
+    <file path="/homepage.html" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1378184856895" ignored="false" />
+    <file path="/tests.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1379063411892" ignored="false" />
+    <file path="/fragment.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1392699435363" ignored="false" />
+    <file path="/user_preferences.html" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1384614061129" ignored="false" />
+    <file path="/login.html" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1378271115359" ignored="false" />
+    <file path="/django.wsgi" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1387412762292" ignored="false" />
+    <file path="/facebook.js" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1378196103503" ignored="false" />
+    <file path="/tasks.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1378204088865" ignored="false" />
+    <file path="/api.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1386126502882" ignored="false" />
+    <file path="/password_reset_complete.html" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1378222677090" ignored="false" />
+    <file path="/password_reset_done.html" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1378221019284" ignored="false" />
+    <file path="/password_reset_form.html" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1383273226018" ignored="false" />
+    <file path="/password_reset_confirm.html" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1383213009769" ignored="false" />
+    <file path="/password_reset_email.html" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1378222584512" ignored="false" />
+    <file path="/test1.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1378284113215" ignored="false" />
+    <file path="/admin.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1387424174483" ignored="false" />
+    <file path="/Python Console" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1392727837024" ignored="false" />
+    <file path="/overview.html" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1379039318414" ignored="false" />
+    <file path="/mailchimp_register_test.html" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1379044974157" ignored="false" />
+    <file path="/utils.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1379578659499" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Programming-Anita/transifex-devel/transifex/.idea/workspace.xml" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1381368831468" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Programming-Anita/VEnv/Lib/site-packages/notification/__init__.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1381323187947" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Programming-Anita/transifex-devel/transifex/addons/watches/models.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1381326371842" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Programming-Anita/VEnv/Lib/site-packages/django/forms/fields.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1381327863574" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Programming-Anita/VEnv/Lib/site-packages/django/contrib/auth/models.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1381327863574" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Programming-Anita/VEnv/Lib/site-packages/django/utils/translation/__init__.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1381327863574" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Programming-Anita/VEnv/Lib/site-packages/django/forms/forms.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1381327863574" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Programming-Anita/VEnv/Lib/site-packages/django/db/models/__init__.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1381327863574" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Programming-Anita/VEnv/Lib/site-packages/django/db/models/base.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1381327863574" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Programming-Anita/VEnv/Lib/site-packages/django/forms/models.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1381327863574" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Programming-Anita/VEnv/Lib/site-packages/django/db/models/fields/__init__.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1381327863574" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Programming-Anita/VEnv/Lib/site-packages/django/conf/__init__.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1381327863574" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Programming-Anita/VEnv/Lib/site-packages/django/contrib/contenttypes/models.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1381327863574" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Programming-Anita/VEnv/Lib/site-packages/django/db/models/loading.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1381327863574" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Programming-Anita/VEnv/Lib/site-packages/django/contrib/databrowse/plugins/calendars.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1381327863574" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Programming-Anita/VEnv/Lib/site-packages/django/utils/importlib.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1381327863574" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Programming-Anita/VEnv/Lib/site-packages/django/db/__init__.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1381327863574" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Programming-Anita/VEnv/Lib/site-packages/django/contrib/databrowse/plugins/fieldchoices.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1381327863574" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Programming-Anita/VEnv/Lib/site-packages/django/contrib/gis/utils/layermapping.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1381327863574" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Programming-Anita/VEnv/Lib/site-packages/django/utils/html.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1381327863574" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Programming-Anita/VEnv/Lib/site-packages/django/conf/urls/defaults.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1381327863574" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Programming-Anita/VEnv/Lib/site-packages/django/core/management/__init__.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1381327863574" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Programming-Anita/VEnv/Lib/site-packages/django/db/models/options.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1381327863574" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Programming-Anita/VEnv/Lib/site-packages/django/contrib/admin/helpers.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1381327863574" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Programming-Anita/VEnv/Lib/site-packages/django/db/models/manager.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1381327863574" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Programming-Anita/transifex-devel/transifex/addons/cla/handlers.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1381330907973" ignored="false" />
+    <file path="/handlers.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1381330887970" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Programming-Anita/transifex-devel/transifex/projects/models.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1381330384323" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Programming-Anita/transifex-devel/transifex/addons/autofetch/models.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1381330492942" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Programming-Anita/transifex-devel/transifex/addons/txapps/models.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1381330503963" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Programming-Anita/transifex-devel/transifex/addons/webhooks/handlers.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1381330518933" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Programming-Anita/transifex-devel/transifex/releases/models.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1381330534162" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Programming-Anita/VEnv/Lib/site-packages/django_addons/autodiscover.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1381363880192" ignored="false" />
+    <file path="/autodiscover.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1381363872242" ignored="false" />
+    <file path="/40-apps.conf" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1381364981973" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Programming-Anita/transifex-devel/transifex/settings/40-apps.conf" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1381364984014" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Programming-Anita/transifex-devel/transifex/wsgi.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1381536013069" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Programming-Anita/transifex-devel/transifex/django.wsgi" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1381756127929" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Programming-Anita/transifex-devel/transifex/settings/20-engines.conf" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1381537808296" ignored="false" />
+    <file path="/20-engines.conf" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1381537740947" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Programming-Anita/transifex-devel/transifex/actionlog/api.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1381752118385" ignored="false" />
+    <file path="/__init__.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1381750340598" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Programming-Anita/transifex-devel/transifex/txcommon/log/__init__.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1381750340598" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Programming-Anita/transifex-devel/transifex/addons/datastores/txredis.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1381752587931" ignored="false" />
+    <file path="/txredis.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1381752582596" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Programming-Anita/transifex-devel/transifex/resources/models.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1381756807459" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Programming-Anita/transifex-devel/transifex/piston/doc.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1381758434800" ignored="false" />
+    <file path="/index.html" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1393069010959" ignored="false" />
+    <file path="/product_details.html" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1383012987966" ignored="false" />
+    <file path="/users-setting.html" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1387620628059" ignored="false" />
+    <file path="/page-2col.html" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1383012979070" ignored="false" />
+    <file path="/new_base.html" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1393059168950" ignored="false" />
+    <file path="/page-2col-base.html" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1383211429715" ignored="false" />
+    <file path="/111" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1383225129703" ignored="false" />
+    <file path="/verbatim_templatetag.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1383392095283" ignored="false" />
+    <file path="/registration.html" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1383707653263" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Coded-Design/AlchemyScraper/Scraper.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1384837470953" ignored="false" />
+    <file path="/fcbkcomplete.style.css" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1385090573698" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Coded-Design/VENV/Lib/site-packages/pymongo/mongo_client.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1385516958452" ignored="false" />
+    <file path="C:/Python27/Lib/Queue.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1385574721965" ignored="false" />
+    <file path="$PROJECT_DIR$/../../ScrapingHubScripts/scrapeToDB.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1390878870998" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Coded-Design/VENV/Lib/site-packages/pymongo/collection.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1385569846916" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Coded-Design/VENV/Lib/site-packages/mechanize/_mechanize.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1386404540184" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Coded-Design/AlchemyScraper/uClassify-Scraper.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1385544690398" ignored="false" />
+    <file path="/uClassify-Scraper.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1391693168911" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Coded-Design/AlchemyScraper/index.php" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1391394842245" ignored="false" />
+    <file path="/index.php" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1390961194043" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Coded-Design/AlchemyScraper/css/custom.css" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1386902712885" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Coded-Design/AlchemyScraper/test.php" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1385608829994" ignored="false" />
+    <file path="/test.php" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1385608573718" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Coded-Design/AlchemyScraper/index2.php" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1385626746033" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Coded-Design/AlchemyScraper/crawler/uClassify-Scraper.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1393077283331" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Coded-Design/AlchemyScraper/crawler/rank_provider.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1386873042804" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Coded-Design/AlchemyScraper/crawler/domains.csv" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1385987360210" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Coded-Design/AlchemyScraper/crawler/log.txt" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1385993003328" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Coded-Design/AlchemyScraper/domains.csv" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1385696443935" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Coded-Design/AlchemyScraper/log.txt" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1385696756185" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Coded-Design/temp/image_manipulate/image_manipulate.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1385781586471" ignored="false" />
+    <file path="/image_manipulate.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1385781585379" ignored="false" />
+    <file path="/style.css" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1391661488168" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Coded-Design/AlchemyScraper/log_view.php" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1391394813710" ignored="false" />
+    <file path="/log_view.php" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1386737574284" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Coded-Design/AlchemyScraper/Alchemy-Scraper.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1385921134628" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Coded-Design/AlchemyScraper/test-mongodb.php" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1385995360949" ignored="false" />
+    <file path="/test-mongodb.php" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1385995360949" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Coded-Design/AlchemyScraper/test.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1386836623425" ignored="false" />
+    <file path="/test.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1386001308479" ignored="false" />
+    <file path="/uClassify.php" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1386165083818" ignored="false" />
+    <file path="C:/wamp/www/index2.php" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1386152524919" ignored="false" />
+    <file path="/index2.php" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1386152524042" ignored="false" />
+    <file path="C:/Python27/Lib/socket.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1386188168175" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Coded-Design/VENV/Lib/site-packages/pymongo/cursor.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1386266298731" ignored="false" />
+    <file path="/example_views.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1387289614804" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Coded-Design/AlchemyScraper/test-proxy.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1386697775865" ignored="false" />
+    <file path="/test-proxy.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1386697704834" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Coded-Design/VENV/Lib/site-packages/mechanize/_useragent.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1386481187976" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Coded-Design/VENV/Lib/site-packages/mechanize/_urllib2_fork.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1386678269076" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1386607340682" ignored="false" />
+    <file path="C:/Python27/Lib/urllib2.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1386659691429" ignored="false" />
+    <file path="$PROJECT_DIR$/../../1.txt" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1386577382737" ignored="false" />
+    <file path="/scrapeToDB.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1390878087448" ignored="false" />
+    <file path="$PROJECT_DIR$/../../ScrapingAPI_VENV/Lib/site-packages/pymysql/cursors.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1386608539111" ignored="false" />
+    <file path="$PROJECT_DIR$/../../ScrapingHubScripts/1.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1390872253895" ignored="false" />
+    <file path="$PROJECT_DIR$/../../ScrapingAPI_VENV/Lib/site-packages/requests/sessions.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1386604751079" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Coded-Design/AlchemyScraper/test2.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1386891011937" ignored="false" />
+    <file path="/test2.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1386730956896" ignored="false" />
+    <file path="/rank_provider.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1386728122041" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Coded-Design/VENV/Lib/site-packages/mechanize/_response.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1386936643092" ignored="false" />
+    <file path="/0006_auto__add_scrapeditems.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1387357847336" ignored="false" />
+    <file path="/1.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1392691683284" ignored="false" />
+    <file path="$PROJECT_DIR$/../../ScrapingHubScripts/3.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1389168560052" ignored="false" />
+    <file path="/3.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1387874324542" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Shanan/Zoho/temp/urbanspace_site/urbanspace_site/urls.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1388420813080" ignored="false" />
+    <file path="$PROJECT_DIR$/../../ScrapingHubScripts/2.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1389168560052" ignored="false" />
+    <file path="/product-details.html" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1392770274676" ignored="false" />
+    <file path="/start_script.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1389758075652" ignored="false" />
+    <file path="/change_form.html" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1390352605888" ignored="false" />
+    <file path="$PROJECT_DIR$/../../temp2/django-haystack-sample-master/django_haystack_sample/settings.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1390661107632" ignored="false" />
+    <file path="$PROJECT_DIR$/../../temp2/django-haystack-sample-master/django_haystack_sample/wsgi.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1390666793277" ignored="false" />
+    <file path="/wsgi.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1390666639849" ignored="false" />
+    <file path="$PROJECT_DIR$/../../temp2/django-haystack-sample-master/venv/Lib/site-packages/django/contrib/admin/sites.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1390667135838" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Coded-Design/AlchemyScraper/test-variable.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1391110747506" ignored="false" />
+    <file path="/test-variable.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1390928050429" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Coded-Design/AlchemyScraper/crawler/uClassify-Scrape-2014-01-28-6kr.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1390956131024" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Coded-Design/AlchemyScraper/crawler/uClassify-Scraper - Copy.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1391012445838" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Coded-Design/AlchemyScraper/crawler/uClassify-Scraper-updated-by-other.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1391044776857" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Coded-Design/AlchemyScraper/crawler/uClassify-Scraper-2014-01-30.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1391111697048" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Coded-Design/AlchemyScraper/crawler/uClassify_Scraper_commented_all1.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1391075468329" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Coded-Design/AlchemyScraper/crawler/uClassify-Scraper-2014-01-30-02.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1391082701088" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Python-Coded-Design/AlchemyScraper/crawler/uClassify-Scraper-2014-01-30-commented.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1391093182941" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../Shanan/Zoho/temp/urbanspace_site/urbanspace_app/views.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1391654341635" ignored="false" />
+    <file path="/waterfall_area.html" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1392891279106" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../RovinV-Django/GoogleCharts/GoogleCharts/settings.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1392730511384" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../RovinV-Django/GoogleCharts/gchart/views.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1392731486471" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../RovinV-Django/test-gchart/1.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1392691687945" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../RovinV-Django/GoogleCharts/templates/index.html" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1392692884378" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../RovinV-Django/GoogleCharts/templates/chart_code.html" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1392706127413" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../RovinV-Django/GoogleCharts/templates/base.html" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1392693194695" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../RovinV-Django/GoogleCharts/GoogleCharts/urls.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1392697515388" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../RovinV-Django/GoogleCharts/gchart/models.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1392730546281" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../RovinV-Django/temp/django-chartit-master/demoproject/templates/model_details.html" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1392704808163" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../RovinV-Django/venv/Lib/site-packages/django/db/backends/mysql/base.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1392720912598" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../RovinV-Django/venv/Lib/site-packages/django/utils/importlib.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1392720912598" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../RovinV-Django/temp/django-nvd3-master/demoproject/demoproject/settings.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1392724749056" ignored="false" />
+    <file path="/invitation_email.txt" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1392817161174" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../temp/TestDjango/TestDjango/settings.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1393234632310" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../../temp/TestDjango/test_app/models.py" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1393238189419" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../JaredPack-PythonDeveloper/source/itc-cli-master/itc/1.php" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1395275105108" ignored="false" />
+    <file path="/1.php" changelist="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" time="1395275102475" ignored="false" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="DatabaseView">
+    <flatten value="false" />
+    <groupTables value="false" />
+    <sortChildren value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="boredshopper" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bshopper_app/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="432" column="29" selection-start="17043" selection-end="17043" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tests.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bshopper_app/tests.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="34" selection-start="346" selection-end="346" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/boredshopper/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="53" column="66" selection-start="3862" selection-end="3862" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/boredshopper/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="222" column="0" selection-start="8020" selection-end="8020" vertical-scroll-proportion="2.0415094">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/django_facebook/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bshopper_app/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="119" column="27" selection-start="4330" selection-end="4330" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="16" selection-start="15" selection-end="16" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="new_base.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/new_base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="399" column="61" selection-start="21207" selection-end="21207" vertical-scroll-proportion="-0.65384614">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/django/contrib/auth/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="41" column="4" selection-start="1713" selection-end="1713" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/templates/invitation_email.txt" />
+        <option value="$PROJECT_DIR$/django/core/mail/__init__.py" />
+        <option value="$PROJECT_DIR$/templates/share_email.txt" />
+        <option value="$PROJECT_DIR$/bshopper_app/models.py" />
+        <option value="$PROJECT_DIR$/bshopper_app/views.py" />
+        <option value="$PROJECT_DIR$/emailconfirmation/models.py" />
+        <option value="$PROJECT_DIR$/templates/waterfall_area.html" />
+        <option value="$PROJECT_DIR$/static/stylesheets/custom.css" />
+        <option value="$PROJECT_DIR$/share/static/js/share.js" />
+        <option value="$PROJECT_DIR$/share/templates/share/links.html" />
+        <option value="$PROJECT_DIR$/boredshopper/urls.py" />
+        <option value="$PROJECT_DIR$/share/templates/share/providers/email.html" />
+        <option value="$PROJECT_DIR$/templates/new_base.html" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/share/static/css/share.css" />
+        <option value="$PROJECT_DIR$/boredshopper/settings.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1378" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>GeneralJavaScript</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Buildout</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="boredshopper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="boredshopper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="boredshopper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="boredshopper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="boredshopper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="boredshopper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="boredshopper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stylesheets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="boredshopper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="boredshopper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="boredshopper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="boredshopper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bshopper_app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="boredshopper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="boredshopper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="boredshopper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PythonSdkConfigurable" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../temp" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="restartRequiresConfirmation" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="FullScreen" value="false" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+  </component>
+  <component name="PublishConfig" serverName="boredshopper" serverId="ea09a9ac-562e-4187-adef-6ab025669874">
+    <servers>
+      <server id="191fb9ad-daee-47f7-b2fa-8d9d5068d60c">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="30c6875b-71c7-475e-a741-f4e1e2061301">
+        <serverdata />
+      </server>
+      <server id="3547c473-306c-4676-8c92-d69f7c90b868">
+        <serverdata />
+      </server>
+      <server id="6d391768-106a-4b19-9c58-b4933f73ba38">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="7a894e95-3f64-4203-843c-0c64404ca025">
+        <serverdata />
+      </server>
+      <server id="97392e12-5874-47ec-9ade-db56d91d5c99">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="99831ad1-83cc-4b9f-ac71-4a8ca5acabee">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="c9a91f4f-e525-4457-b752-6cc3386c1a7d">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="ea09a9ac-562e-4187-adef-6ab025669874">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+    </servers>
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <PyConsoleSettings>
+        <option name="myUseModuleSdk" value="true" />
+        <option name="myModuleName" value="boredshopper" />
+      </PyConsoleSettings>
+    </option>
+    <option name="myDjangoConsoleState">
+      <PyConsoleSettings>
+        <option name="myUseModuleSdk" value="true" />
+        <option name="myModuleName" value="boredshopper" />
+      </PyConsoleSettings>
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\DongGang\oDesk\Tony-PythonAPI\source\boredshopper" />
+      <recent name="D:\DongGang\oDesk\Tony-PythonAPI\source\boredshopper\static\images" />
+      <recent name="D:\DongGang\oDesk\Tony-PythonAPI\source\boredshopper\static\js" />
+      <recent name="D:\DongGang\oDesk\Tony-PythonAPI\source\boredshopper\static\stylesheets\images" />
+      <recent name="D:\DongGang\oDesk\Tony-PythonAPI\source\boredshopper\templates" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\DongGang\oDesk\Tony-PythonAPI\source\boredshopper\static\data" />
+      <recent name="D:\DongGang\oDesk\Tony-PythonAPI\source\boredshopper\static" />
+      <recent name="D:\DongGang\oDesk\Tony-PythonAPI\source\boredshopper" />
+      <recent name="D:\DongGang\oDesk\Tony-PythonAPI\source\boredshopper\bshopper_app\static" />
+      <recent name="D:\DongGang\oDesk\Tony-PythonAPI\source\boredshopper\bshopper_app" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.index.html">
+    <configuration default="false" name="Test: bshopper_app" type="DjangoTestsConfigurationType" factoryName="Django tests" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="boredshopper" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="TARGET" value="bshopper_app" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Test: mailchimp.WebhookTestCase" type="DjangoTestsConfigurationType" factoryName="Django tests" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="boredshopper" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="TARGET" value="mailchimp.WebhookTestCase" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittest WebhookTestCase.test_subscribe" type="tests" factoryName="Unittests" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mailchimp" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="boredshopper" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mailchimp/tests.py" />
+      <option name="CLASS_NAME" value="WebhookTestCase" />
+      <option name="METHOD_NAME" value="test_subscribe" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_METHOD" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Test: mailchimp.WebhookTestCase.test_subscribe" type="DjangoTestsConfigurationType" factoryName="Django tests" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="boredshopper" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="TARGET" value="mailchimp.WebhookTestCase.test_subscribe" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="index.html" type="JavascriptDebugSession" factoryName="Local" singleton="true" temporary="true">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" value="file://$PROJECT_DIR$/templates/index.html" />
+      </JSDebuggerConfigurationSettings>
+      <RunnerSettings RunnerId="JavascriptDebugRunner" />
+      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="boredshopper" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="boredshopper" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="boredshopper" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="boredshopper" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="boredshopper" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
+      <option name="VM_PARAMETERS" value="" />
+      <option name="USER_CFG_CLASS" />
+      <option name="CONTEXT_PROVIDER" />
+      <method />
+    </configuration>
+    <configuration default="false" name="boredshopper" type="Python.DjangoServer" factoryName="Django server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="boredshopper.settings" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../venv/Scripts/python.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="boredshopper" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="80" />
+      <option name="host" value="local.boredshopper.com" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <list size="6">
+      <item index="0" class="java.lang.String" itemvalue="Django tests.Test: bshopper_app" />
+      <item index="1" class="java.lang.String" itemvalue="Django tests.Test: mailchimp.WebhookTestCase" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittest WebhookTestCase.test_subscribe" />
+      <item index="3" class="java.lang.String" itemvalue="Django tests.Test: mailchimp.WebhookTestCase.test_subscribe" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+      <item index="5" class="java.lang.String" itemvalue="Django server.boredshopper" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+        <item index="1" class="java.lang.String" itemvalue="Django tests.Test: mailchimp.WebhookTestCase.test_subscribe" />
+        <item index="2" class="java.lang.String" itemvalue="Django tests.Test: bshopper_app" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittest WebhookTestCase.test_subscribe" />
+        <item index="4" class="java.lang.String" itemvalue="Django tests.Test: mailchimp.WebhookTestCase" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2c8ed650-3929-46cc-b7b2-f0380a8bba9a" name="Default" comment="" />
+      <created>1377149085995</created>
+      <updated>1377149085995</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1378" height="744" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15986949" sideWeight="0.54621214" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.0045454544" sideWeight="0.862969" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20833333" sideWeight="0.8401305" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.022036474" sideWeight="0.93311584" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17401215" sideWeight="0.93311584" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24143556" sideWeight="0.56363636" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1590909" sideWeight="0.4045677" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13703099" sideWeight="0.45909092" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.066884175" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="101" y="101" width="1164" height="526" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13703099" sideWeight="0.5409091" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1761827" sideWeight="0.53939396" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="true" />
+    <option name="myTodoPanelSettings">
+      <value>
+        <are-packages-shown value="false" />
+        <are-modules-shown value="false" />
+        <flatten-packages value="false" />
+        <is-autoscroll-to-source value="false" />
+      </value>
+    </option>
+    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
+    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
+    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
+    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
+    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
+    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
+    <option name="SHORT_DIFF_HORIZONTALLY" value="true" />
+    <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
+    <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
+    <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
+    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+    <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
+    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
+    <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
+    <option name="LIMIT_HISTORY" value="true" />
+    <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
+    <option name="UPDATE_FILTER_SCOPE_NAME" />
+    <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
+    <option name="COMMIT_MESSAGE_MARGIN_SIZE" value="72" />
+    <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
+    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
+    <option name="LAST_COMMIT_MESSAGE" />
+    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
+    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
+    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
+    <option name="ACTIVE_VCS_NAME" />
+    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
+    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
+    <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
+    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
+    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/../venv/Lib/site-packages/emailconfirmation/models.py</url>
+          <line>151</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/django_facebook/auth_backends.py</url>
+          <line>102</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/emailconfirmation/models.py</url>
+          <line>94</line>
+          <option name="timeStamp" value="201" />
+        </line-breakpoint>
+      </breakpoints>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="228" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/share/templates/share/providers/googleplus.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/share/templates/share/providers/pinterest.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/stylesheets/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="382" column="1" selection-start="7058" selection-end="7058" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/share/static/css/share.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="21" selection-start="668" selection-end="668" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/share/templates/share/providers/twitter.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/share/templates/share/providers/print.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boredshopper/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="66" selection-start="3862" selection-end="3862" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_facebook/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bshopper_app/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="34" selection-start="346" selection-end="346" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bshopper_app/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="119" column="27" selection-start="4330" selection-end="4330" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="16" selection-start="15" selection-end="16" vertical-scroll-proportion="-0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django/contrib/auth/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="4" selection-start="1713" selection-end="1713" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bshopper_app/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="432" column="29" selection-start="17043" selection-end="17043" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/new_base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="399" column="61" selection-start="21207" selection-end="21207" vertical-scroll-proportion="-0.65384614">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boredshopper/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="222" column="0" selection-start="8020" selection-end="8020" vertical-scroll-proportion="2.0415094">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
+

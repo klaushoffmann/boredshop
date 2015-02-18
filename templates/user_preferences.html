@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+
+{% block head_title %}User Preferences{% endblock %}
+
+{% block body_content %}
+<form method="post" action="{% url 'user_preferences' %}" class="user_preference" enctype="multipart/form-data">{% csrf_token %}
+   {% with form.FirstName as field %}
+        {% include 'form_field.html' %}
+   {% endwith %}
+
+   {% with form.LastName as field %}
+        {% include 'form_field.html' %}
+   {% endwith %}
+
+   {% with form.Gender as field %}
+        {% include 'form_field.html' %}
+   {% endwith %}
+
+   {% with form.BirthDay as field %}
+        {% include 'form_field.html' %}
+   {% endwith %}
+
+   <div class="required{% if form.ProfilePicturePath.errors %} errors{% endif %}">
+        {{ form.ProfilePicturePath.errors }}
+        <table width="75%">
+        <tr>
+            <td colspan='2'>{{ form.ProfilePicturePath.label_tag }}</td>
+        </tr>
+        <tr>
+            <td id="ProfilePicturePath">
+                <span class="right_side">
+                    {% if user.userpreferences_set.all.0.ProfilePicturePath %}
+                    <img src="{{ STATIC_URL }}../bshopper_app/media/{{ user.userpreferences_set.all.0.ProfilePicturePath }}" alt="" style="width:150px;margin-left: 50px;"/>
+                    {% endif %}
+                </span>
+                {{ form.ProfilePicturePath }}
+            </td>
+            <td>{{ form.ProfilePicturePath.help_text }}</td>
+        </tr>
+        </table>
+   </div>
+
+   {% with form.Location as field %}
+        {% include 'form_field.html' %}
+   {% endwith %}
+
+   {% with form.Categories as field %}
+        {% include 'form_field.html' %}
+   {% endwith %}
+
+   {% with form.Brands as field %}
+        {% include 'form_field.html' %}
+   {% endwith %}
+
+   {% with form.Price as field %}
+        {% include 'form_field.html' %}
+   {% endwith %}
+
+   {% with form.Color as field %}
+        {% include 'form_field.html' %}
+   {% endwith %}
+
+    <div><input type="submit" value="Save" style="margin-left: 200px;"/></div>
+</form>
+
+<script type="text/javascript">
+function render_img()
+{
+    //$('.user_preference ').prepend('<img id="theImg" src="theImg.png" />')
+    $('#ProfilePicturePath a').css('display', 'none');
+    str = $('#ProfilePicturePath').innerHTML;
+    str = str.replace("Currently: ", "");
+    $('#ProfilePicturePath').innerHTML = "str";
+}
+$(document).ready(function(){
+    render_img();
+});
+
+</script>
+{% endblock %}

@@ -1,0 +1,235 @@
+{% extends "base.html" %}
+
+{% block head_title %}Bored Shopper{% endblock %}
+
+{% block body_content %}
+<div class="sideabr">
+  <div class="filter">
+    <h3>Category</h3>
+    <div class="categories">
+      <ul class="parent">
+        <li><a href="#" title="">Men</a></li>
+        <li class="selected"> <a href="#" title="">Women</a>
+          <ul class="child-1">
+            <li><a href="#" title="">Clothing</a></li>
+            <li class="selected"> <a href="#" title="">Bags</a>
+              <ul class="child-2">
+                <li><a href="#" title="">Backpacks</a></li>
+                <li><a href="#" title="">Clutches</a></li>
+                <li><a href="#" title="">Evening</a></li>
+                <li><a href="#" title="">Hobos</a></li>
+                <li><a href="#" title="">Satchels</a></li>
+                <li><a href="#" title="">Shoulder</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <h3>Brands</h3>
+    <div class="brands">
+      <ul class="parent">
+        <li><a href="#" title="">Brand 1</a></li>
+        <li><a href="#" title="">Brand 2</a></li>
+        <li><a href="#" title="">Brand 1</a></li>
+        <li><a href="#" title="">Brand 2</a></li>
+        <li><a href="#" title="">Brand 1</a></li>
+        <li><a href="#" title="">Brand 2</a></li>
+        <li><a href="#" title="">Brand 1</a></li>
+        <li><a href="#" title="">Brand 2</a></li>
+      </ul>
+    </div>
+    <h3>Price</h3>
+    <div class="price-text">
+      <p>
+        <input type="text" id="amount" style="border: 0; color: #545454; " />
+      </p>
+      <div id="slider-range"></div>
+    </div>
+    <h3>Color</h3>
+    <div class="product-colors"> <a href="javascript:;" class="color color-light-blue"><span></span></a> <a href="javascript:;" class="color color-red"><span></span></a> <a href="javascript:;" class="color color-dark-blue"><span></span></a> <a href="javascript:;" class="color color-sand"><span></span></a> <a href="javascript:;" class="color color-black"><span></span></a> <a href="javascript:;" class="color color-orange"><span></span></a> <a href="javascript:;" class="color color-pink"><span></span></a> <a href="javascript:;" class="color color-purple"><span></span></a> <a href="javascript:;" class="color color-grey"><span></span></a> <a href="javascript:;" class="color color-lemon"><span></span></a> </div>
+  </div>
+</div>
+<div class="gallery">
+  <div id="container"></div>
+</div>
+<script type="text/x-handlebars-template" id="waterfall-tpl">
+((#result))
+    <div class="item">
+       <img src="{{ STATIC_URL }}images/{{image}}" width="{{width}}" height="{{height}}" />
+        <div class="product-details">
+		  <h2>The Standard Lorem</h2>
+		  <div class="product-content">
+		  
+		  <p>
+		  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+		  </p>
+		  <p class="thumbs"><a href="#like" class="thumb-like"></a><a href="#like" class="thumb-dislike"></a> </p>
+		  <p class="price">$69.99</p>
+		  
+		</div>
+		
+		</div>
+		<div class="share">
+		     <div class="content-share">
+			<div class="btn-group">
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+    Save 
+  </button>
+  <ul class="dropdown-menu" role="menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+   
+   
+  </ul>
+</div>
+		     <a data-toggle="modal" href="#acc_share"><img src="{{ STATIC_URL }}images/share.png" alt="" /></a>
+			 </div>
+		  </div>
+	</div>
+((/result))
+</script>
+<!-- Button trigger modal -->
+<div class="modal fade" id="acc_share" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h2 class="text-center">Share {Product Name}</h2>
+      </div>
+      <div class="modal-body">
+        <div class="share-form">
+          <div class="social-bttns"> <a class=" btn-fb" title="Share on Facebbok"></a> <a class=" btn-twt" title="Share on twitter"></a> <a class=" btn-pin" title="Share on Pinterest"></a> <a class=" btn-gplus" title="Share on Google+"></a> </div>
+          <div class="social-share-fields">
+            <p class="row">
+              <label for="to" class="col-lg-3">To</label>
+              <input type="text" name=""  class="col-lg-9"/>
+            </p>
+            <p class="row">
+              <label for="from" class="col-lg-3">From</label>
+              <input type="text" name="" class="col-lg-9" />
+            </p>
+            <p class="row">
+              <label for="subject" class="col-lg-3">Subject</label>
+              <input type="text" name=""  class="col-lg-9" />
+            </p>
+            <p class="row">
+              <label for="message" class="col-lg-3">Message</label>
+              <input type="text" name="" class="col-lg-9" />
+            </p>
+            <p class="row">
+              <label class="col-lg-3">&nbsp;</label>
+              <input type="submit" value="Send" class="btn btn-blue"  />
+            </p>
+          </div>
+          <div class="share-url">
+            <p class="row">
+              <label class=" col-lg-3">&nbsp;</label>
+              <strong>Paste this link to share it anywhere you’d like!</strong></p>
+            <p class="row">
+              <label class=" col-lg-3">&nbsp;</label>
+              <input type="text" value="http://shpst.ly/us38451458" name="" class=" col-lg-9" />
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.modal-content -->
+  </div>
+  <!-- /.modal-dialog -->
+</div>
+<div class="modal fade in" id="acc_welcome" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h2 class="text-center">Welcome!</h2>
+      </div>
+      <div class="modal-body">
+        <div class="welcome">
+          <h2>What are you?</h2>
+          <div class="site-categories"> <a href="#" title=""><img src="{{ STATIC_URL }}images/men.png" alt="" /></a> <a href="#" title=""><img src="{{ STATIC_URL }}images/women.png" alt="" /></a> </div>
+          <hr />
+          <h3>What categories are you interested in?</h3>
+          <h6>You can select all your want.</h6>
+          <!-- Women -->
+          <ul class="brandslist">
+            <li> <a href="#"  > <img src="{{ STATIC_URL }}images/womens_clothing.jpg" alt="" />
+              <h4>Clothing & Apparel</h4>
+              </a> </li>
+            <li> <a href="#"  > <img src="{{ STATIC_URL }}images/womens_shoes.jpg" alt="" />
+              <h4>Shoes</h4>
+              </a> </li>
+            <li> <a href="#"  > <img src="{{ STATIC_URL }}images/womens_beauty.jpg" alt="" />
+              <h4>Bath & Beauty</h4>
+              </a> </li>
+            <li> <a href="#"  > <img src="{{ STATIC_URL }}images/womens_accessories.jpg" alt="" />
+              <h4>Accessories</h4>
+              </a> </li>
+            <li> <a href="#"  > <img src="{{ STATIC_URL }}images/womens_intimate_apparel.jpg" alt="" />
+              <h4>Intimate Apparel</h4>
+              </a> </li>
+            <li> <a href="#"  > <img src="{{ STATIC_URL }}images/gadgets.jpg" alt="" />
+              <h4>Gadgets</h4>
+              </a> </li>
+          </ul>
+          <!-- Men -->
+          <!--<ul class="brandslist">
+            <li> <a href="#"  > <img src="{{ STATIC_URL }}images/mens_clothes.jpg" alt="" />
+              <h4>Clothing & Apparel</h4>
+              </a> </li>
+            <li> <a href="#"  > <img src="{{ STATIC_URL }}images/mens_shoes.jpg" alt="" />
+              <h4>Shoes</h4>
+              </a> </li>
+            <li> <a href="#"  > <img src="{{ STATIC_URL }}images/mens_body.jpg" alt="" />
+              <h4>Bath & Body</h4>
+              </a> </li>
+            <li> <a href="#"  > <img src="{{ STATIC_URL }}images/mens_accessories.jpg" alt="" />
+              <h4>Accessories</h4>
+              </a> </li>
+            <li> <a href="#"  > <img src="{{ STATIC_URL }}images/mens_underwear.jpg" alt="" />
+              <h4>Underwear</h4>
+              </a> </li>
+            <li> <a href="#"  > <img src="{{ STATIC_URL }}images/gadgets.jpg" alt="" />
+              <h4>Gadgets</h4>
+              </a> </li>
+          </ul>-->
+          <hr />
+          <p class="text-right"><a  class="btn btn-orange"  data-toggle="modal" href="#acc_welcome">Finish Setup</a></p>
+        </div>
+      </div>
+    </div>
+    <!-- /.modal-content -->
+  </div>
+  <!-- /.modal-dialog -->
+</div>
+
+<script>
+$(function()
+{
+	$('.brands,.categories,.sideabr').jScrollPane();
+});
+
+</script>
+{% endblock %}
+
+{% block footer_js %}
+<script type="text/javascript">
+ $(window).load(function(){
+        $('#acc_welcome').modal('show');
+		$( 'body' ).addClass( 'home');
+    });   	
+
+$('.invite-box a').click(function(){
+        
+		$( 'body' ).addClass( 'home');
+		
+    });
+$('button.close').click(function(){
+		$( 'body' ).removeClass( 'home');
+		
+    });
+	
+</script>
+{% endblock %}

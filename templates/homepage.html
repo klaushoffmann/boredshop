@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+
+{% block head_title %}Bored Shopper{% endblock %}
+
+{% block body_content %}
+{% if user.is_authenticated %}
+{% if messages %}
+<ul>
+    {% for message in messages %}
+    <li>{{ message }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+<p>Logged in as {{ user.email }}.</p>
+<ul>
+    <li><a href="/logout/">logout</a></li>
+    <li><a href="/user_preferences/">Edit User Preferences</a></li>
+</ul>
+
+<ul class="user_preferences_list">
+<li>
+    <span class="left_side">First Name : </span>
+    <span class="right_side">{{ user.userpreferences_set.all.0.FirstName }}</span>
+</li>
+<li>
+    <span class="left_side">Last Name : </span>
+    <span class="right_side">{{ user.userpreferences_set.all.0.LastName }}</span>
+</li>
+<li>
+    <span class="left_side">Gender : </span>
+    <span class="right_side">{{ user.userpreferences_set.all.0.Gender }}</span>
+</li>
+<li>
+    <span class="left_side">FirstName : </span>
+    <span class="right_side">{{ user.userpreferences_set.all.0.FirstName }}</span>
+</li>
+<li>
+    <span class="left_side">Birth Day : </span>
+    <span class="right_side">{{ user.userpreferences_set.all.0.BirthDay }}</span>
+</li>
+<li>
+    <span class="left_side" style="float: left;">Profile Picture Path : </span><br/>
+    {% if user.userpreferences_set.all.0.ProfilePicturePath %}
+    <img src="{{ STATIC_URL }}../bshopper_app/media/{{ user.userpreferences_set.all.0.ProfilePicturePath }}" alt="" style="width:150px;float: left;"/>
+    {% endif %}
+    </span>
+</li>
+<br/>
+<li style="clear: both;">
+    <span class="left_side" style="">Location : </span>
+    <span class="right_side">{{ user.userpreferences_set.all.0.Location }}</span>
+</li>
+<li>
+    <span class="left_side">Categories : </span>
+    <span class="right_side">{{ user.userpreferences_set.all.0.Categories }}</span>
+</li>
+<li>
+    <span class="left_side">Brands : </span>
+    <span class="right_side">{{ user.userpreferences_set.all.0.Brands }}</span>
+</li>
+<li>
+    <span class="left_side">Price : </span>
+    <span class="right_side">{{ user.userpreferences_set.all.0.Price }}</span>
+</li>
+<li>
+    <span class="left_side">Color : </span>
+    <span class="right_side">{{ user.userpreferences_set.all.0.Color }}</span>
+
+</li>
+</ul>
+
+{% else %}
+<p>Not logged in.</p>
+<ul>
+    <li><a href="/signup/">signup</a></li>
+    <li><a href="/login/">login</a></li>
+</ul>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,9 @@
+Hi {{ name }},
+
+{{ sender }} invited you to join boredshopper,
+a website where you can search and recommend products!
+
+To accept the invitation, please click the link below:
+{{ link }}
+
+-- boredshopper Team

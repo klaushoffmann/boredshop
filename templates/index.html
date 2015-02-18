@@ -1,0 +1,1026 @@
+{% extends "new_base.html" %}
+{% load share_tags %}
+{% block head_title %}Bored Shopper{% endblock %}
+{% block header_js %}
+        {% share_css %}
+        {% share_js %}
+{% endblock %}
+{% block invite_friends %}
+  <div class="header-right">
+    <div class="invite-box"><a class="btn btn-blue" data-toggle="modal" href="#acc_invitation">Invite Friends</a></div>
+    <select name="" id="select_type">
+    {% if user.is_authenticated %}
+      <option {% if type == "recommended" %}selected{% endif %}>Recommended</option>
+    {% endif %}
+      <option {% if type == "trending" %}selected{% endif %}>Trending</option>
+      <option {% if type == "newest" %}selected{% endif %}>Newest</option>
+    </select>
+  </div>
+{% endblock %}
+{% block body_content %}
+<div class="sideabr">
+  <div class="filter">
+    <h3>Category</h3>
+    <div class="categories">
+      <ul class="parent">
+        <li class="checked">
+          <input type="checkbox" id="catid-" />
+          <label for="cat-men">Men</label>
+          <ul class="child-1">
+            <li >
+              <input type="checkbox"  id="catid-32" />
+              <label for="subcat-clothing">Clothing</label>
+              <ul class="child-2">
+                <li>
+                  <input type="checkbox" id="catid-8" />
+                  <label for="subcat-Backpacks">Shorts</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="catid-13" />
+                  <label for="subcat-Backpacks">Shirts</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="catid-14" />
+                  <label for="subcat-Backpacks">Pants</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="catid-15" />
+                  <label for="subcat-Backpacks">Jackets & Coats</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="catid-16" />
+                  <label for="subcat-Backpacks">Sweaters</label>
+                </li>
+              </ul>
+            </li>
+            <li >
+              <input type="checkbox" id="catid-9" />
+              <label for="subcat-clothing">Shoes</label>
+              <ul class="child-2">
+                <li>
+                  <input type="checkbox" id="catid-10" />
+                  <label for="subcat-Backpacks">Socks</label>
+                </li>
+              </ul>
+            </li>
+            <li >
+              <input type="checkbox" id="catid-17" />
+              <label for="subcat-clothing">Accessories</label>
+              <ul class="child-2">
+                <li>
+                  <input type="checkbox" id="catid-18" />
+                  <label for="subcat-Backpacks">Hats</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="catid-23" />
+                  <label for="subcat-Backpacks">Belts</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="catid-30" />
+                  <label for="subcat-Backpacks">Watches</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="catid-42" />
+                  <label for="subcat-Backpacks">Sunglasses</label>
+                </li>
+              </ul>
+            </li>
+            <li >
+              <input type="checkbox" id="catid-31" />
+              <label for="subcat-clothing">Underwear</label>
+            </li>
+            <li >
+              <input type="checkbox" id="catid-38" />
+              <label for="subcat-clothing">Fragrances</label>
+            </li>
+            <li >
+              <input type="checkbox" id="catid-39" />
+              <label for="subcat-clothing">Hair Care</label>
+            </li>
+            <li >
+              <input type="checkbox" id="catid-40" />
+              <label for="subcat-clothing">Skincare</label>
+            </li>
+          </ul>
+        </li>
+        <li class="checked">
+          <input type="checkbox" id="catid-" />
+          <label for="cat-women">Women</label>
+          <ul class="child-1">
+            <li >
+              <input type="checkbox" id="catid-27" />
+              <label for="subcat-clothing">Clothing</label>
+              <ul class="child-2">
+                <li>
+                  <input type="checkbox" id="catid-26" />
+                  <label for="subcat-Backpacks">Shorts</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="catid-45" />
+                  <label for="subcat-Backpacks">Jackets & Coats</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="catid-1" />
+                  <label for="subcat-Backpacks">Dresses</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="catid-2" />
+                  <label for="subcat-Backpacks">Tops & Blouses</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="catid-3" />
+                  <label for="subcat-Backpacks">Pants</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="catid-12" />
+                  <label for="subcat-Backpacks">Skirts</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="catid-33" />
+                  <label for="subcat-Backpacks">Maternity</label>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <input type="checkbox" id="catid-4" />
+              <label for="subcat-bag">Shoes</label>
+              <ul class="child-2">
+                <li>
+                  <input type="checkbox" id="catid-24" />
+                  <label for="subcat-Backpacks">Socks</label>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <input type="checkbox" id="catid-11" />
+              <label for="subcat-bag">Accessories</label>
+              <ul class="child-2">
+                <li>
+                  <input type="checkbox" id="catid-5" />
+                  <label for="subcat-Backpacks">Handbags & Purses</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="catid-19" />
+                  <label for="subcat-Backpacks">Jewelry</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="catid-21" />
+                  <label for="subcat-Backpacks">Belts</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="catid-22" />
+                  <label for="subcat-Backpacks">Hats</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="catid-25" />
+                  <label for="subcat-Backpacks">Watches</label>
+                </li>
+                <li>
+                  <input type="checkbox"  id="catid-41" />
+                  <label for="subcat-Backpacks">Sunglasses</label>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <input type="checkbox" id="catid-6" />
+              <label for="subcat-bag">Intimate Apparel</label>
+            </li>
+            <li>
+              <input type="checkbox" id="catid-34" />
+              <label for="subcat-bag">Fragrances</label>
+            </li>
+            <li>
+              <input type="checkbox" id="catid-35" />
+              <label for="subcat-bag">Makeup</label>
+            </li>
+            <li>
+              <input type="checkbox" id="catid-36" />
+              <label for="subcat-bag">Hair Care</label>
+            </li>
+            <li>
+              <input type="checkbox" id="catid-37" />
+              <label for="subcat-bag">Skincare</label>
+            </li>
+            <li>
+              <input type="checkbox" id="catid-43" />
+              <label for="subcat-bag">Baby & Toddler</label>
+            </li>
+          </ul>
+        </li>
+        <li class="checked">
+          <input type="checkbox" id="catid-28" />
+          <label for="cat-women">Sporting Goods</label>
+          <ul class="child-1">
+            <li>
+              <input type="checkbox" id="catid-29" />
+              <label for="subcat-Backpacks">Hiking & Camping</label>
+            </li>
+          </ul>
+        </li>
+        <li class="checked ">
+          <input type="checkbox" id="catid-7" />
+          <label for="cat-women">Other</label>
+        </li>
+        <li class="checked">
+          <input type="checkbox" id="catid-20" />
+          <label for="cat-women">Gadgets</label>
+        </li>
+        <li class="checked">
+          <input type="checkbox" id="catid-44" />
+          <label for="cat-women">Toys</label>
+        </li>
+      </ul>
+    </div>
+    <h3>Brands</h3>
+    <div class="brands">
+      <ul class="parent">
+        {% for Top_Manufacturer in Top_Manufacturers %}
+        <li>
+          <input type="checkbox" name="{{ Top_Manufacturer.Manufacturer_Id }}" id="{{ Top_Manufacturer.Manufacturer_Id }}" class="brand_chk"/>
+          <label for="{{ Top_Manufacturer.Manufacturer_Id }}">{{ Top_Manufacturer.Manufacturer }}</label>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <h3>Price</h3>
+    <div class="price-text">
+      <p>
+        <input type="text" id="amount" style="border: 0; color: #545454;" />
+      </p>
+      <div id="slider-range"></div>
+    </div>
+    <h3>Color</h3>
+    <div class="product-colors">
+        <a href="javascript:void(0);" onclick="javascript:color_filter(this, 'blue');" class="color color-light-blue"><span><img src="{{ STATIC_URL }}images/check.png" alt="" /></span></a>
+        <a href="javascript:void(0);" onclick="javascript:color_filter(this, 'red');" class="color color-red"><span><img src="{{ STATIC_URL }}images/check.png" alt="" /></span></a>
+        <a href="javascript:void(0);" onclick="javascript:color_filter(this, 'violet');" class="color color-violet"><span><img src="{{ STATIC_URL }}images/check.png" alt="" /></span></a>
+        <a href="javascript:void(0);" onclick="javascript:color_filter(this, 'beige');" class="color color-sand"><span><img src="{{ STATIC_URL }}images/check.png" alt="" /></span></a>
+        <a href="javascript:void(0);" onclick="javascript:color_filter(this, 'black');" class="color color-black"><span><img src="{{ STATIC_URL }}images/check.png" alt="" /></span></a>
+        <a href="javascript:void(0);" onclick="javascript:color_filter(this, 'orange');" class="color color-orange"><span><img src="{{ STATIC_URL }}images/check.png" alt="" /></span></a>
+        <a href="javascript:void(0);" onclick="javascript:color_filter(this, 'pink');" class="color color-pink"><span><img src="{{ STATIC_URL }}images/check.png" alt="" /></span></a>
+        <a href="javascript:void(0);" onclick="javascript:color_filter(this, 'purple');" class="color color-purple"><span><img src="{{ STATIC_URL }}images/check.png" alt="" /></span></a>
+        <a href="javascript:void(0);" onclick="javascript:color_filter(this, 'grey');" class="color color-grey"><span><img src="{{ STATIC_URL }}images/check.png" alt="" /></span></a>
+        <a href="javascript:void(0);" onclick="javascript:color_filter(this, 'yellow');" class="color color-yellow"><span><img src="{{ STATIC_URL }}images/check.png" alt="" /></span></a>
+        <a href="javascript:void(0);" onclick="javascript:color_filter(this, 'cyan');" class="color color-cyan"><span><img src="{{ STATIC_URL }}images/check.png" alt="" /></span></a>
+        <a href="javascript:void(0);" onclick="javascript:color_filter(this, 'green');" class="color color-green"><span><img src="{{ STATIC_URL }}images/check.png" alt="" /></span></a>
+    </div>
+  </div>
+</div>
+<div class="infobox">
+    <p class="right" id="infobox_title">
+        {% if type == "recommended" %}Recommended Products{% endif %}
+        {% if type == "trending" %}Trending Products{% endif %}
+        {% if type == "newest" %}Newest Products{% endif %}
+    </p>
+</div>
+<div class="gallery">
+    <div id="container" class="waterfall-container" style="position: relative;">
+    </div>
+    <div id="waterfall-loading" style="display: none;float: left;width: 100%;">
+        <div style="text-align:center;padding:10px 0; color:#999;">
+            <img src="data:image/gif;base64,R0lGODlhEAALAPQAAP///zMzM+Li4tra2u7u7jk5OTMzM1hYWJubm4CAgMjIyE9PT29vb6KiooODg8vLy1JSUjc3N3Jycuvr6+Dg4Pb29mBgYOPj4/X19cXFxbOzs9XV1fHx8TMzMzMzMzMzMyH5BAkLAAAAIf4aQ3JlYXRlZCB3aXRoIGFqYXhsb2FkLmluZm8AIf8LTkVUU0NBUEUyLjADAQAAACwAAAAAEAALAAAFLSAgjmRpnqSgCuLKAq5AEIM4zDVw03ve27ifDgfkEYe04kDIDC5zrtYKRa2WQgAh+QQJCwAAACwAAAAAEAALAAAFJGBhGAVgnqhpHIeRvsDawqns0qeN5+y967tYLyicBYE7EYkYAgAh+QQJCwAAACwAAAAAEAALAAAFNiAgjothLOOIJAkiGgxjpGKiKMkbz7SN6zIawJcDwIK9W/HISxGBzdHTuBNOmcJVCyoUlk7CEAAh+QQJCwAAACwAAAAAEAALAAAFNSAgjqQIRRFUAo3jNGIkSdHqPI8Tz3V55zuaDacDyIQ+YrBH+hWPzJFzOQQaeavWi7oqnVIhACH5BAkLAAAALAAAAAAQAAsAAAUyICCOZGme1rJY5kRRk7hI0mJSVUXJtF3iOl7tltsBZsNfUegjAY3I5sgFY55KqdX1GgIAIfkECQsAAAAsAAAAABAACwAABTcgII5kaZ4kcV2EqLJipmnZhWGXaOOitm2aXQ4g7P2Ct2ER4AMul00kj5g0Al8tADY2y6C+4FIIACH5BAkLAAAALAAAAAAQAAsAAAUvICCOZGme5ERRk6iy7qpyHCVStA3gNa/7txxwlwv2isSacYUc+l4tADQGQ1mvpBAAIfkECQsAAAAsAAAAABAACwAABS8gII5kaZ7kRFGTqLLuqnIcJVK0DeA1r/u3HHCXC/aKxJpxhRz6Xi0ANAZDWa+kEAA7" alt=""><br>Loading...
+        </div>
+    </div>
+    <div id="waterfall-message" style="display: none;float: left;width: 100%; text-align:center;color:#999;"><p style="color:#666;">no more data...</p></div>
+</div>
+<!-- Button trigger modal -->
+<div class="modal fade" id="acc_share" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="overflow: hidden;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h2 class="text-center" id="share_send_title" style="text-transform: none;"></h2>
+      </div>
+      <div class="modal-body">
+        <div class="share-form">
+          <div class="social-bttns">{% share %}
+              <!--<a class=" btn-fb" title="Share on Facebbok"></a> <a class=" btn-twt" title="Share on twitter"></a> <a class=" btn-pin" title="Share on Pinterest"></a> <a class=" btn-gplus" title="Share on Google+"></a>-->
+          </div>
+          <div class="social-share-fields">
+            <p class="row">
+              <label for="to" class="col-lg-3">To</label>
+              <input type="text" name=""  class="col-lg-9" id="share_send_to"/>
+            </p>
+            <p class="row">
+              <label for="from" class="col-lg-3">From</label>
+              <input type="text" name="" class="col-lg-9" value="{% if user.is_authenticated %}{{ user.email }}{% endif %}" id="share_send_from"/>
+            </p>
+            <p class="row">
+              <label for="subject" class="col-lg-3">Subject</label>
+              <input type="text" name=""  class="col-lg-9" value="Check out what I found at BoredShopper!" id="share_send_subject"/>
+            </p>
+            <p class="row">
+              <label for="message" class="col-lg-3">Message</label>
+              <textarea name="" class="col-lg-9" id="share_send_message"></textarea>
+            </p>
+            <p class="row">
+              <label class="col-lg-3">&nbsp;</label>
+              <input type="submit" value="Send" class="btn btn-blue" id="share_send" />
+            </p>
+            <p class="fields row">
+                <div class="alert alert-danger" id="id_share_validmsg" style="display: none;">Please input valid To email.</div>
+                <div class="alert alert-danger" id="id_share_validmsg2" style="display: none;">Please input valid From email.</div>
+                <div class="alert alert-danger" id="id_share_validmsg3" style="display: none;">Please input valid Subject.</div>
+            </p>
+          </div>
+          <div class="share-url" style="padding-top: 0px;">
+            <p class="row">
+              <label class=" col-lg-3">&nbsp;</label>
+              <strong>Paste this link to share it anywhere you’d like!</strong></p>
+            <p class="row">
+              <label class=" col-lg-3">&nbsp;</label>
+              <input type="text" value="" name="" class=" col-lg-9" id="share_send_url"/>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.modal-content -->
+  </div>
+  <!-- /.modal-dialog -->
+</div>
+<div class="modal fade in" id="acc_welcome" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true" style="display: none;">&times;</button>
+        <h2 class="text-center">Welcome !</h2>
+      </div>
+      <div class="modal-body">
+        <div class="welcome">
+          {% if user.userpreferences_set.all.0.Gender|stringformat:"s" == "n" %}
+          <h2>What are you?</h2>
+          <div class="site-categories">
+            <div id="id_gender_man" class="gender_option" title="" style="border: 3px solid #6f86f0;">
+                <img src="{{ STATIC_URL }}images/men.png" alt="" />
+            </div>
+            <div id="id_gender_woman" class="gender_option" title="" style="opacity: 0.6;">
+                <img src="{{ STATIC_URL }}images/women.png" alt="" />
+            </div>
+          </div>
+          {% else %}
+            <p class="gender_welcome">Welcome {% if user.first_name|length > 0 %}{{ user.first_name }}{% else %}{{ user.email }}{% endif %}</p>
+          {% endif %}
+          <hr class="gender_hr"/>
+          <h3>What categories are you interested in?</h3>
+          <h6 class="brandlist_you_can">You can select all you want.</h6>
+          <!-- Women -->
+          <ul id="brandslist_women" class="brandslist"
+              style="{% if user.userpreferences_set.all.0.Gender|stringformat:"s" == "f" %}display: block;{% else %}display: none;{% endif %}"
+                  >
+            <li> <a href="#" class="brandslist_item" style="margin-left: 2%;"> <img src="{{ STATIC_URL }}images/womens_clothing.jpg" alt="" />
+              <h4 style="font-size: 11px;line-height: 13px;">Clothing & Apparel</h4><input type="hidden" value="27,1,2,3,12,26,33"/>
+              </a> </li>
+            <li> <a href="#" class="brandslist_item"> <img src="{{ STATIC_URL }}images/womens_shoes.jpg" alt="" />
+              <h4>Shoes</h4><input type="hidden" value="4,24"/>
+              </a> </li>
+            <li> <a href="#" class="brandslist_item"> <img src="{{ STATIC_URL }}images/womens_beauty.jpg" alt="" />
+              <h4>Bath & Beauty</h4><input type="hidden" value="34,35,36,37"/>
+              </a> </li>
+            <li> <a href="#" class="brandslist_item"> <img src="{{ STATIC_URL }}images/womens_accessories.jpg" alt="" />
+              <h4>Accessories</h4><input type="hidden" value="11,5,19,21,22,25,41"/>
+              </a> </li>
+            <li> <a href="#" class="brandslist_item"> <img src="{{ STATIC_URL }}images/womens_intimate_apparel.jpg" alt="" />
+              <h4 style="font-size: 12px;line-height: 13px;">Intimate Apparel</h4><input type="hidden" value="6"/>
+              </a> </li>
+            <li> <a href="#" class="brandslist_item" style="margin-right: 0%;"> <img src="{{ STATIC_URL }}images/gadgets.jpg" alt="" />
+              <h4>Gadgets</h4><input type="hidden" value="20"/>
+              </a> </li>
+          </ul>
+          <!-- Men -->
+          <ul id="brandslist_men" class="brandslist"
+            style="{% if user.userpreferences_set.all.0.Gender|stringformat:"s" != "f" %}display: block;{% else %}display: none;{% endif %}"
+                  >
+            <li> <a href="#" class="brandslist_item" style="margin-left: 2%;"> <img src="{{ STATIC_URL }}images/mens_clothes.jpg" alt="" />
+              <h4 style="font-size: 11px;line-height: 13px;">Clothing & Apparel</h4><input type="hidden" value="32,8,13,14,15,16"/>
+              </a> </li>
+            <li> <a href="#" class="brandslist_item"> <img src="{{ STATIC_URL }}images/mens_shoes.jpg" alt="" />
+              <h4>Shoes</h4><input type="hidden" value="9"/>
+              </a> </li>
+            <li> <a href="#" class="brandslist_item"> <img src="{{ STATIC_URL }}images/mens_body.jpg" alt="" />
+              <h4>Bath & Body</h4><input type="hidden" value="38,39,40"/>
+              </a> </li>
+            <li> <a href="#" class="brandslist_item"> <img src="{{ STATIC_URL }}images/mens_accessories.jpg" alt="" />
+              <h4>Accessories</h4><input type="hidden" value="17,18,23,30,42"/>
+              </a> </li>
+            <li> <a href="#" class="brandslist_item"> <img src="{{ STATIC_URL }}images/mens_underwear.jpg" alt="" />
+              <h4>Underwear</h4><input type="hidden" value="31"/>
+              </a> </li>
+            <li> <a href="#" class="brandslist_item" style="margin-right: 0%;"> <img src="{{ STATIC_URL }}images/gadgets.jpg" alt="" />
+              <h4>Gadgets</h4><input type="hidden" value="20"/>
+              </a> </li>
+          </ul>
+          <hr />
+          <div class="alert alert-danger" id="id_welcome_validmsg" style="display: none;width: 95%;margin-left: 2%;">No category selected.</div>
+          <p class="text-right"><a  id="acc_welcome_submit" class="btn btn-orange"  data-toggle="modal" href="#acc_welcome">Finish Setup</a></p>
+        </div>
+      </div>
+    </div>
+    <!-- /.modal-content -->
+  </div>
+  <!-- /.modal-dialog -->
+</div>
+
+<form id="sidebar_frm" action="{% url 'bshopper_app.views.ui_index_with_param'%}" method="post" target="_self">{% csrf_token %}
+    <input type="hidden" name="type" id="sidebar_type" value="{{ type }}" />
+    <input type="hidden" name="category" id="sidebar_category" value="" />
+    <input type="hidden" name="brands" id="sidebar_brands" value="" />
+    <input type="hidden" name="min_price" id="sidebar_min_price" value="" />
+    <input type="hidden" name="max_price" id="sidebar_max_price" value="" />
+    <input type="hidden" name="color" id="sidebar_color" value="" />
+</form>
+<script>
+$(function()
+{
+	$('.brands,.categories,.sideabr').jScrollPane();
+});
+
+</script>
+{% endblock %}
+
+{% block footer_js %}
+<script type="text/javascript">
+
+var g_totalProductsCnt = 0;
+var g_curPage = 0;
+var g_lastPage = 0;
+var g_search_cond_changed = true;
+var g_loading = false;
+var g_noMoreData = false;
+var cancel_dislike = 0;
+var while_liking = 0;
+
+$(window).scroll(function() {
+    //console.log("$(window).scrollTop(): " + $(window).scrollTop() + ", $(window).innerHeight(): " + $(window).innerHeight()+ ", $('body')[0].scrollHeight: " + $('body')[0].scrollHeight)
+    var bottom = $(window).scrollTop() + $(window).innerHeight() >= ($('body')[0].scrollHeight -100);
+    if (!g_noMoreData && bottom && !g_loading) {
+        g_loading = true;
+        console.log("load next page: " + bottom + ", g_loading: " + g_loading);
+        load_next_page();
+    }
+});
+function color_filter(obj, color)
+{
+    checkimg = $(obj).find("img");
+    if( $(checkimg).css('display') == 'none' )
+    {
+        $(".product-colors a img").css("display", "none");
+        $(checkimg).css('display', 'block');
+        $("#sidebar_color").val(color);
+        on_new_search();
+    }
+    else
+    {
+        $(".product-colors a img").css("display", "none");
+        $(checkimg).css('display', 'none');
+        $("#sidebar_color").val("");
+        on_new_search();
+    }
+    //load_next_page();
+}
+function on_new_search()
+{
+    g_curPage = 0;
+    g_noMoreData = false;
+    g_loading = false;
+    $("#container").html("");
+    $("#waterfall-message").css("display", "none");
+    $("#waterfall-loading").css("display", "none");
+    load_next_page();
+}
+function load_next_page()
+{
+    $("#waterfall-loading").css("display", "block");
+    $("#waterfall-message").css("display", "none");
+    g_curPage += 1;
+    page_cal = g_curPage;
+    urlstr = "{% url 'bshopper_app.views.BShopperServices_getProducts' %}";
+
+    ajax_req = $.ajax({
+        url: urlstr,
+        type: "POST",
+        data: {
+/*            product_type: "recommended",
+            pageNo: "1",
+            min_price: "0",
+            max_price: "500",
+            brand: "null",
+            categories: "null",
+            color: "null"*/
+            product_type: $('#sidebar_type').val(),
+            pageNo: g_curPage,
+            min_price: $('#sidebar_min_price').val(),
+            max_price: $("#sidebar_max_price").val(),
+            brand: $("#sidebar_brands").val(),
+            categories: $("#sidebar_category").val(),
+            color: $("#sidebar_color").val()
+        },
+        success: function(data) {
+            $("#waterfall-loading").css("display", "none");
+            container_html = $("#container").html();
+            $("#container").html(container_html + data.rendered_string);
+            g_loading = false;
+            //console.log("data.total_cnt: " + data.total_cnt);
+            if(parseInt(data.total_cnt)<1)
+            {
+                g_noMoreData = true;
+                $("#waterfall-message").css("display", "block");
+                $("#waterfall-message").html("no more data...");
+            }
+            $(".imgLiquidFill").imgLiquid();
+        },
+        error: function(data) {
+            $("#waterfall-loading").css("display", "none");
+            g_loading = false;
+            console.log("Error on load_next_page()");
+            $("#waterfall-message").css("display", "block");
+            $("#waterfall-message").html("Data load faild, please try again later.");
+        }
+    });
+}
+
+$(window).load(function(){
+
+    $("#share_send").click(function(){
+        $('#id_share_validmsg').css("display", "none");
+        $('#id_share_validmsg2').css("display", "none");
+        $('#id_share_validmsg3').css("display", "none");
+        if( $("#share_send_to").val() == "" || !validateEmail($("#share_send_to").val()) )
+        {
+            $('#id_share_validmsg').css("display", "block");
+            return;
+        }
+        if( $("#share_send_from").val() == "" || !validateEmail($("#share_send_from").val()) )
+        {
+            $('#id_share_validmsg2').css("display", "block");
+            return;
+        }
+        if($("#share_send_subject").val() == "")
+        {
+            $('#id_share_validmsg3').css("display", "block");
+            return;
+        }
+
+        var url = "{% url 'bshopper_app.views.ajax_share_send' %}";
+        ajax_req = $.ajax({
+            url: url,
+            type: "POST",
+            data: {
+                share_send_to: $("#share_send_to").val(),
+                share_send_from: $("#share_send_from").val(),
+                share_send_subject: $("#share_send_subject").val(),
+                share_send_message: $("#share_send_message").val(),
+                share_send_url: $("#share_send_url").val()
+            },
+            success: function(data){
+                if(data.return_code == "success")
+                {
+                    //document.location.href = "/";
+                    console.log("successfully sent.");
+                    $('#acc_share').modal('hide');
+                }
+                else
+                {
+                    alert(data.return_code);
+                }
+            },
+            error: function(data){
+                alert("error occured!");
+            }
+        });
+    });
+
+    $(function() {
+        var min_price = 0;
+        var max_price = 500;
+        $( "#slider-range" ).slider({
+                range: true,
+                min: 0,
+                max: 500,
+                values: [ min_price, max_price ],
+                slide: function( event, ui ) {
+                    min_value = ui.values[ 0 ];
+                    if(ui.values[ 0 ] == max_price){
+                        min_value -= 1;
+                    }
+
+                    if(ui.values[ 1 ] == max_price){
+                        $( "#amount" ).val( "$" + min_value + " - $" + ui.values[ 1 ] + "+" );
+                    }
+                    else{
+                        $( "#amount" ).val( "$" + min_value + " - $" + ui.values[ 1 ] );
+                    }
+                },
+                stop: function( event, ui ) {
+                    $("#sidebar_min_price").val(ui.values[0]);
+                    $("#sidebar_max_price").val(ui.values[1]);
+                    //$("#sidebar_frm").submit();
+                    on_new_search();
+                }
+            });
+
+            $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+            " - $" + $( "#slider-range" ).slider( "values", 1 )
+            );
+    });
+    $( "#amount" ).val("$0 - $500+");
+
+    $("#select_type").change( function () {
+        var option = $("#select_type").val();
+        $("#sidebar_type").val(option.toLowerCase());
+        $("#sidebar_frm").submit();
+    });
+
+{% if user.userpreferences_set.all.0.Categories|length < 1 %}
+    $('#acc_welcome').modal({
+        show : true,
+        keyboard : true,
+        backdrop : false
+   });
+    $( 'body' ).addClass( 'home');
+{% endif %}
+
+    $("#acc_welcome_submit").click(function(){
+        $("#id_welcome_validmsg").css("display", "none");
+        var gender = "{{ user.userpreferences_set.all.0.Gender }}";
+        if(gender == "n")
+        {
+            if($("#id_gender_man").css("border-top-color") != "rgb(255, 255, 255)")
+            {
+                gender = "m";
+            }
+            else if($("#id_gender_woman").css("border-top-color") != "rgb(255, 255, 255)")
+            {
+                gender = "f";
+            }
+        }
+
+        var Categories = "";
+        if(gender == "m"){
+            $('#brandslist_men .brandslist_item').each(function () {
+                if( $(this).css("border-top-color") != "rgb(255, 255, 255)" )
+                {
+                    //alert($(this).children('input').val());
+                    if( Categories.length > 0)
+                    {
+                        Categories += ","+$(this).children('input').val();
+                    }
+                    else
+                    {
+                        Categories = $(this).children('input').val();
+                    }
+                }
+                //alert( $(this).css("border-top-color") );
+            });
+        }
+        else if(gender == "f"){
+            $('#brandslist_women .brandslist_item').each(function () {
+                if( $(this).css("border-top-color") != "rgb(255, 255, 255)" )
+                {
+                    if( Categories.length > 0)
+                    {
+                        Categories += ","+$(this).children('input').val();
+                    }
+                    else
+                    {
+                        Categories = $(this).children('input').val();
+                    }
+                }
+            });
+        }
+
+        //alert(Categories);
+        if(Categories.length < 1)
+        {
+            $("#id_welcome_validmsg").css("display", "block");
+            return;
+        }
+        var url = "{% url 'bshopper_app.views.ajax_acc_welcome' %}";
+        ajax_req = $.ajax({
+            url: url,
+            type: "POST",
+            data: {
+                gender: gender,
+                Categories: Categories
+            },
+            success: function(data){
+                if(data.return_code == "success")
+                {
+                    $('#acc_welcome').modal('hide');
+                    document.location.href = "/";
+                }
+                else
+                {
+                    alert(data.return_code);
+                }
+            },
+            error: function(data){
+                alert("error occured!");
+            }
+        });
+
+    });
+
+    $( ".brandslist_item" ).click(function() {
+        if($(this).css("border-left-style") == "dotted" || $(this).css("border-top-color") == "rgb(255, 255, 255)")
+        {//not selected
+            $(this).css("border", "1px solid #6f86f0");
+            $(this).css("opacity", "1.0");
+        }
+        else if( $(this).css("border-top-color") != "rgb(255, 255, 255)" && $(this).css("border-left-style") == "solid" )
+        {//already selected, so release
+            $(this).css("border", "1px solid #ffffff");
+            $(this).css("opacity", "0.6");
+        }
+    });
+    $(".brandslist_item").hover(function(){
+            if("rgb(255, 255, 255)" == $(this).css('border-top-color'))
+            {
+                $(this).css("border", "1px dotted #6f86f0");
+            }
+        },function(){
+            //alert($(this).css("border-left-style"));
+            if($(this).css("border-left-style") == "dotted")
+            {
+                $(this).css("border", "1px solid #ffffff");
+            }
+        }
+    );
+
+    $( ".gender_option" ).click(function() {
+        $("#id_gender_man").css("border", "3px solid #ffffff");
+        $("#id_gender_woman").css("border", "3px solid #ffffff");
+        $("#id_gender_man").css("opacity", "0.6");
+        $("#id_gender_woman").css("opacity", "0.6");
+        $(this).css("border", "3px solid #6f86f0");
+        $(this).css("opacity", "1.0");
+        if($("#id_gender_man").css("border-top-color") != "rgb(255, 255, 255)")
+        {
+            $("#brandslist_men").css("display", "block");
+            $("#brandslist_women").css("display", "none");
+        }
+        else
+        {
+            $("#brandslist_men").css("display", "none");
+            $("#brandslist_women").css("display", "block");
+        }
+
+    });
+
+    $(".gender_option").hover(function(){
+            if("rgb(255, 255, 255)" == $(this).css('border-top-color'))
+            {
+                $(this).css("border", "3px dotted #6f86f0");
+            }
+        },function(){
+            //alert($(this).css("border-left-style"));
+            if($(this).css("border-left-style") == "dotted")
+            {
+                $(this).css("border", "3px solid #ffffff");
+            }
+        }
+    );
+
+});
+/*
+$('.invite-box a').click(function(){
+        
+		$( 'body' ).addClass( 'home');
+		
+    });
+$('button.close').click(function(){
+		$( 'body' ).removeClass( 'home');
+		
+    });
+	*/
+setInterval( function()
+{
+    //console.log("$(window).scrollTop(): " + $(window).scrollTop() + ", $(window).innerHeight(): " + $(window).innerHeight()+ ", $('body')[0].scrollHeight: " + $('body')[0].scrollHeight)
+    var bottom = $(window).scrollTop() + $(window).innerHeight() >= ($('body')[0].scrollHeight -100);
+    if (!g_noMoreData && bottom && !g_loading) {
+        g_loading = true;
+        console.log("load next page: " + bottom + ", g_loading: " + g_loading);
+        load_next_page();
+        //$(".product-details, .product-details-grey").removeClass("product-details-grey");
+    }
+}, 2000);
+
+function on_thumbs_rtn_message_hide(obj)
+{
+    obj = $(".product-details, .product-details-grey");
+    $(obj).closest("div.item").find("div.thumbs_rtn_message").hide();
+    div_prod_details = $(obj).closest("div.item").find("div.product-details");
+    //$(div_prod_details).css({"opacity":"0"});
+    //console.log(div_prod_details);
+    //console.log(obj);
+    $(div_prod_details).removeClass("product-details-grey");0
+    //while_liking = 0;
+    //console.log("on_thumbs_rtn_message_hide!!!!!!!");
+}
+function on_product_like_timeout(obj, like_or_dislike, productId)
+{
+    preloader_obj = $(obj).closest("div.item").find("div.preloader");
+    if(cancel_dislike == 1 && like_or_dislike == "0")
+    {
+        preloader_obj.hide();
+        while_liking = 0;
+
+        //div_prod_details = $(obj).closest("div.item").find("div.product-details");
+        //$(div_prod_details).css({"opacity":"0"});
+        return;
+    }
+    $(obj).closest("div.item").find("div.undo_for_dislike").hide();
+    console.log("productId: " + productId + ", like_or_dislike: " + like_or_dislike);
+    var url = "{% url 'bshopper_app.views.ajax_product_like_dislike' %}";
+    ajax_req = $.ajax({
+        url: url,
+        type: "POST",
+        data: {
+            like: like_or_dislike,
+            productId: productId
+        },
+        success: function(data){
+            //alert(like_or_dislike + ": " + productId);
+            if(data.return_code == "success")
+            {
+                //document.location.href = "/";
+                if(like_or_dislike == "1")
+                {
+                    //$(obj).addClass("liked_product");
+                    //not_set_product
+                    $(obj).closest("p.thumbs").find("a").removeClass("not_set_product");
+                    $(obj).closest("p.thumbs").find("a").addClass("liked_product");
+                }
+                else if(like_or_dislike == "0")
+                {
+                    //$(obj).addClass("disliked_product");
+                    $(obj).closest("p.thumbs").find("a").removeClass("not_set_product");
+                    $(obj).closest("p.thumbs").find("a").addClass("disliked_product");
+                }
+                //console.log("successfully updated like_dislike");
+                $(obj).closest("div.item").find("div.thumbs_rtn_message").show();
+                setTimeout(on_thumbs_rtn_message_hide, 2000, obj);
+            }
+            else
+            {
+                alert(data.return_code);
+                div_prod_details = $(obj).closest("div.item").find("div.product-details");
+                //$(div_prod_details).css({"opacity":"0"});
+                $(div_prod_details).removeClass("product-details-grey");
+            }
+            preloader_obj.hide();
+            while_liking = 0;
+        },
+        error: function(data){
+            alert("error occured!");
+            preloader_obj.hide();
+            while_liking = 0;
+            div_prod_details = $(obj).closest("div.item").find("div.product-details");
+            //$(div_prod_details).css({"opacity":"0"});
+            $(div_prod_details).removeClass("product-details-grey");
+        }
+    });
+}
+function on_product_like(obj, like_or_dislike, productId)
+{
+    {% if not user.is_authenticated %}
+        $('#acc_register').modal('show');
+        return;
+    {% endif %}
+    if(while_liking == 1)
+    {
+        return;
+    }
+    while_liking = 1;
+    if( $(obj).attr('class').indexOf('liked_product') !== -1 )
+    {
+        while_liking = 0;
+        return;
+    }
+    preloader_obj = $(obj).closest("div.item").find("div.preloader");
+    preloader_obj.show();
+    if(like_or_dislike == "0")
+    {
+        //wait 3 seconds for undo
+        cancel_dislike = 0;
+    }
+    else
+    {
+       $(obj).closest("div.item").find("div.undo_for_dislike").hide();
+    }
+
+    div_prod_details = $(obj).closest("div.item").find("div.product-details");
+    //$(div_prod_details).css({"opacity":"1", "display":"block"});
+    $(div_prod_details).addClass("product-details-grey");
+    setTimeout(on_product_like_timeout, 3000, obj, like_or_dislike, productId);
+}
+
+function on_product_details(e, productId)
+{
+    urlstr = "{% url 'bshopper_app.views.product_details' productId="00000" %}";
+    urlstr = urlstr.replace("00000", productId);
+    window.open(urlstr, '_self');
+}
+function on_oncancel_disliking(obj)
+{
+    //alert("cancel");
+    //preloader_obj = $(obj).closest("div.item").find("div.preloader");
+    preloader_obj = $(obj).closest("div.preloader");
+    preloader_obj.hide();
+    div_prod_details = $(obj).closest("div.item").find("div.product-details");
+    $(div_prod_details).removeClass("product-details-grey");
+    cancel_dislike = 1;
+}
+$('.brand_chk').change(function() {
+    var brands_lst = "";
+    $('.brand_chk').each(function(i, obj) {
+        //test
+        if($(obj).is(":checked")) {
+            if(brands_lst != "")
+            {
+                brands_lst += ","
+            }
+            brands_lst += $(obj).attr("id");
+        }
+    });
+    console.log("brands: " + brands_lst);
+    $("#sidebar_brands").val(brands_lst);
+    on_new_search();
+});
+
+$("div.categories input[type='checkbox']").click(function(){
+    child_ul = $(this).closest("li").find("ul");
+    if($(this).is(':checked'))
+    {
+        $(child_ul).find("input[type='checkbox']").prop('checked', true);
+    }
+    else
+    {
+        $(child_ul).find("input[type='checkbox']").prop('checked', false);
+    }
+
+    var cate_lst = "";
+    $('div.categories input[type=checkbox]').each(function(i, obj) {
+        //test
+        if($(obj).is(":checked")) {
+            var cate = $(obj).attr("id");
+            cate = cate.replace("catid-", "");
+            if( cate.length > 0)
+            {
+                if(cate_lst != "")
+                {
+                    cate_lst += ","
+                }
+                cate_lst += cate;
+            }
+        }
+    });
+    console.log("cate_lst: " + cate_lst);
+    $("#sidebar_category").val(cate_lst);
+    on_new_search();
+});
+/*
+$('div.categories input[type=checkbox]').change(function() {
+    console.log($(this));
+    var cate_lst = "";
+    $('div.categories input[type=checkbox]').each(function(i, obj) {
+        //test
+        if($(obj).is(":checked")) {
+            var cate = $(obj).attr("id");
+            cate = cate.replace("catid-", "");
+            if( cate.length > 0)
+            {
+                if(cate_lst != "")
+                {
+                    cate_lst += ","
+                }
+                cate_lst += cate;
+            }
+        }
+    });
+    console.log("cate_lst: " + cate_lst);
+    $("#sidebar_category").val(cate_lst);
+    on_new_search();
+});*/
+    /*if($(this).is(":checked")) {
+    //'checked' event code
+
+        return;
+    }
+    else {
+
+    }*/
+    //'unchecked' event code
+function on_product_share(obj, product_id)
+{
+    urlstr = "{% url 'bshopper_app.views.product_details' productId="00000" %}";
+    urlstr = urlstr.replace("00000", product_id);
+    urlstr = "http://www.boredshopper.com" + urlstr;
+    product_title = $("#product_" + product_id).html();
+    $("#share_send_title").html("<b>SHARE - </b>" + product_title);
+
+    $("#share_send_url").val(urlstr);
+    $('#acc_share').modal('show');
+}
+</script>
+{% endblock %}

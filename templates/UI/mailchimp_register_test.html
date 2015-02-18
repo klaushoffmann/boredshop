@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block head_title %}Test Mailchimp Forms{% endblock %}
+
+{% block body_content %}
+<form method="post" action="" class="singupform">{% csrf_token %}
+<table>{{ form.as_table }}</table>
+<input type="submit" value="signup"/>
+</form>
+{% endblock %}

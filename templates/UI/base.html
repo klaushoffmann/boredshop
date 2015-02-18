@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>{% block head_title %}{% endblock %}</title>
+
+        <link href="{{ STATIC_URL }}stylesheets/jquery-ui.css" rel="stylesheet" type="text/css" />
+        <link href="{{ STATIC_URL }}stylesheets/jquery.jscrollpane.css" rel="stylesheet" type="text/css" />
+        <link href="{{ STATIC_URL }}stylesheets/bootstrap.css" rel="stylesheet" type="text/css" />
+        <link href="{{ STATIC_URL }}stylesheets/style.css" rel="stylesheet" type="text/css" />
+        <link href="{{ STATIC_URL }}stylesheets/fcbkcomplete.style.css" rel="stylesheet" type="text/css" />
+
+        <link href="{{ STATIC_URL }}stylesheets/custom.css" type="text/css" rel="stylesheet" media="all" />
+
+        {% block header_js %}
+        {% endblock %}
+
+    </head>
+    <body>
+        <div id="header">
+          <div class="menu">
+            <ul>
+              <li><a data-toggle="modal" href="#acc_login">Sign in</a></li>
+              <li><a data-toggle="modal" href="#acc_register" title="">Register </a></li>
+              <li><a href="#" title="" class="btn dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"><img src="{{ STATIC_URL }}images/user.png" alt="" />My Account</a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Preferences </a></li>
+                  <li><a href="#">Privacy </a></li>
+                  <li><a href="#">Log out</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="logo"><a href="index.html"><img src="{{ STATIC_URL }}images/logo.png" alt="" /></a></div>
+          <div class="search">
+            <input type="text" onblur="if (this.value == '') {this.value = 'Search...';}"
+         onfocus="if (this.value == 'Search...') {this.value = '';}"  name="search" id="search" value="Search..." />
+          </div>
+          <div class="header-right">
+            <div class="invite-box"><a class="btn btn-blue" data-toggle="modal" href="#acc_invitation">Invite Friends</a></div>
+            <select name="">
+              <option>Recommended</option>
+              <option>Popular </option>
+              <option>Newest</option>
+            </select>
+          </div>
+        </div>
+
+        {% block body_content %}
+        {% endblock %}
+        <div class="modal fade" id="acc_login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              </div>
+              <div class="modal-body">
+                <div class="content-account">
+                  <div class="account-login">
+                    <h2>Sign In</h2>
+                    <p class="fields row">
+                      <label for="email">User email</label>
+                      <input type="text" name="email" class="col-lg-12" />
+                    </p>
+                    <p class="fields row">
+                      <label for="password">Password</label>
+                      <input type="password" name="password" class="col-lg-12"/>
+                    </p>
+                    <p class="fields text-right"> <a href="">Forgot password?</a>&nbsp;
+                      <input type="submit" name="submit" class="btn btn-blue" value="Login" />
+                    </p>
+                    <div class="login-with-facebook">
+                      <p class="text-center"> <a href="#"> <img src="{{ STATIC_URL }}images/login-with-facebook.png" alt="" /> </a> </p>
+                      <p class="text-center">Fast, Easy &amp; Secure!</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /.modal-content -->
+          </div>
+          <!-- /.modal-dialog -->
+        </div>
+        <div class="modal fade" id="acc_register" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              </div>
+              <div class="modal-body">
+                <div class="content-account">
+                  <div class="account-register">
+                    <h2>Create An Account</h2>
+                    <p class="text-center"> <a href="#"> <img src="{{ STATIC_URL }}images/login-with-facebook.png" alt="" /> </a><br/>
+                      Fast, Easy &amp; Secure! </p>
+                    <p>&nbsp;</p>
+                    <center>
+                      <b>OR</b>
+                    </center>
+                    <p class="fields row">
+                      <label for="email">Email</label>
+                      <input type="email" name="email" class="col-lg-12" />
+                    </p>
+                    <p class="fields row">
+                      <label for="email">Password</label>
+                      <input type="password" name="password" class="col-lg-12" />
+                    </p>
+                    <p class="fields row">
+                      <label for="email">Verify Password</label>
+                      <input type="password" name="verifypassword" class="col-lg-12" />
+                    </p>
+                    <p class="checkbox"><span >
+                      <input type="checkbox" />
+                      Check here to receive personalized emails from BoredShopper </span></p>
+                    <p class="checkbox"><span >
+                      <input type="checkbox" />
+                      I have read and agree to the <a href="#">terms of
+                      service</a> and <a href="#">privacy policy</a>. </span></p>
+                    <p>
+                      <input type="submit" class="btn btn-orange" value="CREATE ACCOUNT" />
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /.modal-content -->
+          </div>
+          <!-- /.modal-dialog -->
+        </div>
+        <div class="modal fade" id="acc_invitation" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h2 class="text-center">Invite Your Friends to Bored Shopper</h2>
+              </div>
+              <div class="modal-body">
+                <div class="share-form">
+                  <div class="social-bttns"> <a class=" btn-fb-share" title="Share on Facebbok"></a> <a class=" btn-gmail-share" title="Share on twitter"></a> </div>
+                  <div class="social-share-fields">
+                    <p class="row">
+                      <label for="to" class="col-lg-3">Freind's Email</label>
+                      <input type="text" name=""  class="col-lg-9"/>
+                    </p>
+                    <p class="row">
+                      <label for="to" class="col-lg-3">Freind's Email</label>
+                      <input type="text" name=""  class="col-lg-9"/>
+                    </p>
+                    <p class="row">
+                      <label for="to" class="col-lg-3">Freind's Email</label>
+                      <input type="text" name=""  class="col-lg-9"/>
+                    </p>
+                    <p class="row">
+                      <label for="to" class="col-lg-3">Freind's Email</label>
+                      <input type="text" name=""  class="col-lg-9"/>
+                    </p>
+                    <p class="row">
+                      <label for="to" class="col-lg-3">Freind's Email</label>
+                      <input type="text" name=""  class="col-lg-9"/>
+                    </p>
+                    <p class="row">
+                      <label for="to" class="col-lg-3">Message for Your Friend</label>
+                      <textarea name=""  class="col-lg-9"></textarea>
+                    </p>
+                    <p class="row">
+                      <label class="col-lg-3">&nbsp;</label>
+                      <input type="submit" value="Send" class="btn btn-blue"  />
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /.modal-content -->
+          </div>
+          <!-- /.modal-dialog -->
+        </div>
+
+        <script src="{{ STATIC_URL }}js/jquery.js"></script>
+        <script src="{{ STATIC_URL }}js/bootstrap.min.js"></script>
+        <script src="{{ STATIC_URL }}js/dropdown.js"></script>
+        <script src="{{ STATIC_URL }}js/jquery-ui.js"></script>
+        <script src="{{ STATIC_URL }}js/jquery.jscrollpane.min.js"></script>
+        <script src="{{ STATIC_URL }}js/jquery.mousewheel.js"></script>
+        <script src="{{ STATIC_URL }}js/handlebars.js"></script>
+        <script src="{{ STATIC_URL }}js/waterfall.min.js"></script>
+        <script src="{{ STATIC_URL }}js/custom.js"></script>
+
+        {% block footer_js %}
+        {% endblock %}
+
+    </body>
+</html>

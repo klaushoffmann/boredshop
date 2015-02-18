@@ -1,0 +1,249 @@
+{% extends "new_base.html" %}
+
+{% block head_title %}Bored Shopper{% endblock %}
+
+{% block body_content %}
+<div class="clear"></div>
+<div class="spacer"></div>
+<!--bodyarea starts-->
+<div class="bodyarea">
+  <div class="breadcrumb"><a href="/">Home</a> &raquo; <a href="#">Products</a> &raquo; <a class="" href="#">{{ scrapeditem.predicted_category_name_fmt }}</a> &raquo; <a class="breadcrumb_active" href="#">{{ scrapeditem.title }}</a></div>
+  <!--product starts-->
+  <div class="product">
+    <div class="product_frame">
+      <div class="product_display imgLiquidFill imgLiquid" style="width:385px; height:451px;"><img src="{{ product_imgs.0 }}" id="product_main_img" /></div>
+      {% for product_img_item in product_thumb_imgs %}
+          <div class="thumb">
+              <a href="javascript:void(0);" onclick="on_product_img_change('{{ product_img_item }}');"><img src="{{ product_img_item }}" /></a>
+          </div>
+      {% endfor %}
+    </div>
+  </div>
+  <!--product ends-->
+  <div class="product_details">
+    <h1>{{ scrapeditem.title }}</h1>
+    <div class="line"></div>
+    <div class="price"><strong>Price:</strong> $<span>{{ scrapeditem.retail_price }}&nbsp;&nbsp;&nbsp;</span>
+        {% if scrapeditem.sale_price != 0 %}
+        <strong>Sale:</strong> $<span class="sale_price_text">{{ scrapeditem.sale_price }}</span>
+        {% endif %}
+    </div>
+    <div class="des">
+      <p>{{ scrapeditem.description }}</p>
+    </div>
+
+    <div class="details_preloader" style="display: none;">
+        <img src="{{ STATIC_URL }}images/loading.gif" class="ajax-loader"/>
+        <div class="undo_for_dislike" onclick="on_oncancel_disliking(this);">cancel</div>
+    </div>
+    <div class="thumbs_rtn_message_details" style="display: none;">
+        Product Rated!
+    </div>
+
+    <div class="thum">
+        <a href="javascript:void(0);" class="thumb-up {{ likeproduct}}" onclick="on_product_like(this, '1', '{{ scrapeditem.id }}');"></a>
+        <a href="javascript:void(0);" class="thumb-down {{ likeproduct }}"  onclick="on_product_like(this, '0', '{{ scrapeditem.id }}');"></a>
+    </div>
+    <div class="caption"><strong>Brand:</strong> <span>{{ scrapeditem.manufacturer }}</span></div>
+    <div class="clear"></div>
+    <div class="caption"><strong>Color:</strong> </div>
+    {% if Hex != "" %}
+        <div class="color1" style="background: #{{ Hex }};"></div>
+    {% endif %}
+    <div class="clear"></div>
+    <div class="size">
+        <div class="size_title">Size:</div>
+        <div class="size_item_wrapper">
+        {% for size_item in sizes %}
+            <div class="size_item">{{ size_item }}</div>
+        {% endfor %}
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div class="buy_btn"><a href="{{ scrapeditem.url }}" class="btn btn-orange">BUY AT {{ merch_name }}</a></div>
+  </div>
+  <!--product detail ends here-->
+  <div class="clear"></div>
+  <div class="line2"></div>
+  <div class="heading">
+    <h2>You may also like...</h2>
+  </div>
+  <div class="product_box_wrapper" >
+  {% for similar_product_item in similar_products %}
+      <div class="product_box"><a href="javascript:void(0);" title=""  onclick="on_similar_product_details(this, '{{ similar_product_item.id }}');">
+          <img src="{{ similar_product_item.product_imgs.0 }}" class="similar_product_img"/><br />
+        <div class="product_name">{{ similar_product_item.title }}<br/>
+          <span>${{ similar_product_item.retail_price }}</span></div>
+        </a> </div>
+  {% endfor %}
+  </div>
+  <div class="clear"></div>
+  <div class="line2"></div>
+  <div class="heading">
+    <h2>Recently Viewed</h2>
+  </div>
+  {% for recently_product_item in recently_products %}
+  <div class="product_box"><a href="javascript:void(0);" title=""  onclick="on_similar_product_details(this, '{{ recently_product_item.id }}');">
+      <img src="{{ recently_product_item.product_imgs.0 }}" class="similar_product_img"/><br />
+    <div class="product_name">{{ recently_product_item.title }}<br/>
+      <span>${{ recently_product_item.retail_price }}</span></div>
+    </a> </div>
+  {% endfor %}
+</div>
+<!--bodyarea ends-->
+<div class="clear"></div>
+<!--footer starts here-->
+<div class="footer">
+  <div class="copyright">Copyright&copy; All Rights Reserved.</div>
+  <div class="footer_link"><a href="#">Home</a> <a href="#">About</a> <a href="#">Products</a> <a href="#">Services</a> <a href="#">Contact</a> </div>
+</div>
+<!--footer ends here-->
+{% endblock %}
+
+{% block footer_js %}
+<script type="text/javascript">
+function on_product_img_change(img_url)
+{
+    //background-image: url(http://d3euhvysnzl3oa.cloudfront.net/full/2935a45f42dcdf393b9ec843d9d7e6e6450c4790.jpg);
+/*    if( img_url != $("#product_main_img").attr("src"))
+    {
+        img_url = img_url.replace("thumbs/small/", "full/");
+        $("#product_main_img").attr("src", img_url);
+        //console.log(img_url);
+        //$(".imgLiquidFill").imgLiquid();
+    }
+*/
+    img_url = img_url.replace("thumbs/small/", "full/");
+    $('.product_display').css('background-image','url('+img_url+')');
+
+}
+function on_similar_product_details(e, productId)
+{
+    urlstr = "{% url 'bshopper_app.views.product_details' productId="00000" %}";
+    urlstr = urlstr.replace("00000", productId);
+    window.open(urlstr, '_blank');
+}
+
+var cancel_dislike = 0;
+var while_liking = 0;
+function on_thumbs_rtn_message_hide(obj)
+{
+    $(obj).closest("div.product_details").find("div.thumbs_rtn_message_details").hide();
+    //div_prod_details = $(obj).closest("div.item").find("div.product-details");
+    //$(div_prod_details).css({"opacity":"0"});
+    //$(div_prod_details).removeClass("product-details-grey");
+}
+function on_product_like_timeout(obj, like_or_dislike, productId)
+{
+    preloader_obj = $(obj).closest("div.product_details").find("div.details_preloader");
+    if(cancel_dislike == 1 && like_or_dislike == "0")
+    {
+        preloader_obj.hide();
+        while_liking = 0;
+
+        //div_prod_details = $(obj).closest("div.item").find("div.product-details");
+        //$(div_prod_details).css({"opacity":"0"});
+        return;
+    }
+    $(obj).closest("div.product_details").find("div.undo_for_dislike").hide();
+
+    var url = "{% url 'bshopper_app.views.ajax_product_like_dislike' %}";
+    ajax_req = $.ajax({
+        url: url,
+        type: "POST",
+        data: {
+            like: like_or_dislike,
+            productId: productId
+        },
+        success: function(data){
+            //alert(like_or_dislike + ": " + productId);
+            if(data.return_code == "success")
+            {
+                //document.location.href = "/";
+                if(like_or_dislike == "1")
+                {
+                    //$(obj).addClass("liked_product");
+                    //not_set_product
+                    $(obj).closest("div.thum").find("a").removeClass("not_set_product");
+                    $(obj).closest("div.thum").find("a").addClass("liked_product");
+                }
+                else if(like_or_dislike == "0")
+                {
+                    //$(obj).addClass("disliked_product");
+                    $(obj).closest("div.thum").find("a").removeClass("not_set_product");
+                    $(obj).closest("div.thum").find("a").addClass("disliked_product");
+                }
+                //console.log("successfully updated like_dislike");
+                $(obj).closest("div.product_details").find("div.thumbs_rtn_message_details").show();
+                setTimeout(on_thumbs_rtn_message_hide, 2000, obj);
+            }
+            else
+            {
+                alert(data.return_code);
+                //div_prod_details = $(obj).closest("div.item").find("div.product-details");
+                //$(div_prod_details).css({"opacity":"0"});
+                //$(div_prod_details).removeClass("product-details-grey");
+            }
+            preloader_obj.hide();
+            while_liking = 0;
+        },
+        error: function(data){
+            alert("error occured!");
+            preloader_obj.hide();
+            while_liking = 0;
+            //div_prod_details = $(obj).closest("div.item").find("div.product-details");
+            //$(div_prod_details).css({"opacity":"0"});
+            //$(div_prod_details).removeClass("product-details-grey");
+        }
+    });
+}
+function on_product_like(obj, like_or_dislike, productId)
+{
+    {% if not user.is_authenticated %}
+        $('#acc_register').modal('show');
+        return;
+    {% endif %}
+    if(while_liking == 1)
+    {
+        return;
+    }
+    while_liking = 1;
+    if( $(obj).attr('class').indexOf('liked_product') !== -1 )
+    {
+        while_liking = 0;
+        return;
+    }
+    preloader_obj = $(obj).closest("div.product_details").find("div.details_preloader");
+    preloader_obj.show();
+    $(obj).closest("div.product_details").find("div.undo_for_dislike").show();
+
+    if(like_or_dislike == "0")
+    {
+        //wait 3 seconds for undo
+        cancel_dislike = 0;
+    }
+    else
+    {
+       $(obj).closest("div.product_details").find("div.undo_for_dislike").hide();
+    }
+
+    //div_prod_details = $(obj).closest("div.item").find("div.product-details");
+    //$(div_prod_details).css({"opacity":"1", "display":"block"});
+    //$(div_prod_details).addClass("product-details-grey");
+    setTimeout(on_product_like_timeout, 3000, obj, like_or_dislike, productId);
+}
+
+function on_oncancel_disliking(obj)
+{
+    cancel_dislike = 1;
+    //alert("cancel");
+    //preloader_obj = $(obj).closest("div.item").find("div.details_preloader");
+    preloader_obj = $(obj).closest("div.details_preloader");
+    preloader_obj.hide();
+}
+$(document).ready(function() {
+    $(".imgLiquidFill").imgLiquid();
+});
+</script>
+
+{% endblock %}

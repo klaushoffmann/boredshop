@@ -1,0 +1,291 @@
+{% extends "new_base.html" %}
+
+{% block head_title %}Bored Shopper{% endblock %}
+
+{% block header_js %}
+<style type="text/css">
+div.footer {
+    z-index: 1030;
+}
+div#header {
+    z-index: 1030;
+}
+</style>
+<script src="{{ STATIC_URL }}js/jquery.fcbkcomplete.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+function validateForm()
+{
+    $("#id_birthday_validmsg").css("display", "none");
+
+    year = $( "#select_birthday_year").val();
+    month = $( "#select_birthday_month").val();
+    day = $( "#select_birthday_day").val();
+
+    if(year == "0" && month == "0" && day == "0")
+    {
+        birthday_str = "1900-01-01";
+        $("#id_BirthDay").val(birthday_str);
+    }
+    else if(year == "0" || month == "0" || day == "0")
+    {//invalid birthday
+        $("#id_birthday_validmsg").css("display", "block");
+        return false;
+    }
+    else
+    {
+        if( month.length < 2 )
+        {
+            month = "0" + month;
+        }
+        if( day.length < 2 )
+        {
+            day = "0" + day;
+        }
+        birthday_str = year + "-" + month + "-" + day;
+        $("#id_BirthDay").val(birthday_str);
+    }
+
+    var selected = new Array();
+    $('#categories option').each(function() {
+        selected.push($(this).val());
+    });
+    //alert( selected.join(', ') );
+    $("#id_Categories").val(selected.join(','));
+
+    var selected_brands = new Array();
+    $('#brands option').each(function() {
+        selected_brands.push($(this).val());
+    });
+    //alert( selected.join(', ') );
+    $("#id_Brands").val(selected_brands.join(','));
+
+    //alert($("#id_ProfilePicturePath").val());
+    //alert($("#id_BirthDay").val());
+    //return false;
+}
+</script>
+{% endblock %}
+{% block invite_friends %}
+  <div class="header-right">
+    <div class="invite-box"><a class="btn btn-blue" data-toggle="modal" href="#acc_invitation">Invite Friends</a></div>
+  </div>
+{% endblock %}
+{% block body_content %}
+<div class="clear"></div>
+<div class="spacer"></div>
+<!--bodyarea starts-->
+<div class="bodyarea">
+  <div class="breadcrumb" style="display: none;"><a href="#">Home</a> &raquo; <a href="#">Products</a> &raquo; <a class="breadcrumb_active" href="#">Details</a></div>
+  <div class="content-2col">
+    <div class="form-title">
+      <h2>User Preferences</h2>
+    </div>
+    <div class="form-fields">
+      <div class="fields-center">
+       <form method="post" action="{% url 'user_setting' %}" class="user_setting" enctype="multipart/form-data" onsubmit="return validateForm()">{% csrf_token %}
+        <p>
+            <div class="alert alert-success" id="id_success_msg" style="{% if successfully_saved != 1 %}display: none;{% endif %}">Settings Saved Successfully.</div>
+        </p>
+        <p>
+            <div class="alert alert-danger" id="id_birthday_validmsg" style="display: none;">Please input valid Birthday.</div>
+        </p>
+        <p>
+          <label>Email Address</label>
+          <label class="user_preferences_email">{{ user.email }}</label>
+        </p>
+        <p>
+          <label>First Name</label>
+          <input type="text" value="{{ form.FirstName.value|default_if_none:0 }}" name="FirstName" maxlength="100" id="id_FirstName">
+        </p>
+        <p>
+          <label>Last Name</label>
+          <input type="text" value="{{ form.LastName.value|default_if_none:0 }}" name="LastName" maxlength="100" id="id_LastName">
+        </p>
+        <p>
+          <label>Birthday</label>
+          <input type="hidden" value="{{ form.BirthDay.value|default_if_none:0 }}" name="BirthDay" maxlength="100" id="id_BirthDay">
+          <select id="select_birthday_month" class="calendar" >
+            {% if birthday_sep.0 == 1900 %}
+            <option value="0" selected="selected">Month</option>
+            {% else %}
+            <option value="0">Month</option>
+            {% endif %}
+            {% for m in monthlst %}
+                <option value="{{ m }}" {% if birthday_sep.1 == m %}{% if birthday_sep.0 != 1900 %}selected="selected"{% endif %}{% endif %}>{{ m }}</option>
+            {% endfor %}
+          </select>
+          <select id="select_birthday_day" class="calendar" >
+            {% if birthday_sep.0 == 1900 %}
+            <option value="0" selected="selected">Day</option>
+            {% else %}
+            <option value="0">Day</option>
+            {% endif %}
+            {% for d in datelst %}
+                <option value="{{ d }}" {% if birthday_sep.2 == d %}{% if birthday_sep.0 != 1900 %}selected="selected"{% endif %}{% endif %}>{{ d }}</option>
+            {% endfor %}
+          </select>
+          <select id="select_birthday_year" class="calendar" >
+            {% if birthday_sep.0 == 1900 %}
+            <option value="0" selected="selected">Year</option>
+            {% else %}
+            <option value="0">Year</option>
+            {% endif %}
+            {% for y in yearlst %}
+                <option value="{{ y }}" {% if birthday_sep.0 == y %}{% if birthday_sep.0 != 1900 %}selected="selected"{% endif %}{% endif %}>{{ y }}</option>
+            {% endfor %}
+          </select>
+        </p>
+        <p>
+          <label>Gender</label>
+          <!--<input type="text" value="{{ form.Gender.value|default_if_none:0 }}" name="Gender" maxlength="100" id="id_Gender">-->
+          <input type="radio" id="id_Gender_0" style="margin-left:6px;margin-right: 22px;width: 15px;" name="Gender" value="m" {% if form.Gender.value == "m" %}checked{% endif %}><label for="id_Gender_0" class="user_setting_gender_male_label" style="width: 47px;">Male</label></input>
+          <input type="radio" id="id_Gender_1" style="margin-right: 22px;width: 15px;" name="Gender" value="f" {% if form.Gender.value == "f" %}checked{% endif %}><label for="id_Gender_1" class="user_setting_gender_female_label" style="width: 47px;">Female</label></input>
+        </p>
+        <p>
+          <label>Categories</label>
+          <input type="hidden" value="{{ form.Categories.value|default_if_none:0 }}" name="Categories" maxlength="100" id="id_Categories">
+
+          <select id="categories" name="categories">
+        {% with t_cate=form.Categories.value|stringformat:"s" %}
+        {% with t_cate2=","|add:t_cate|add:"," %}
+            {% for object in Categories %}
+                {% with t_cateid=object.CatId|stringformat:"s" %}
+                {% with t_cateid2=","|add:t_cateid|add:"," %}
+                <option value="{{ object.CatId }}" {% if  t_cateid2 in t_cate2 %}class="selected"{% endif %}>{{ object.Category_name_hier }}</option>
+                {% endwith %}
+                {% endwith %}
+            {% endfor %}
+        {% endwith %}
+        {% endwith %}
+          </select>
+          <script type="text/javascript">
+            $(document).ready(function(){                
+                $("#categories").fcbkcomplete({
+                    //json_url: "{{ STATIC_URL }}data/categories_data.txt",
+                    addontab: true,                   
+                    maxitems: 50,
+                    input_min_size: 0,
+                    height: 10,
+					width: 315,
+					filter_selected: true,
+					addontab: true,
+                    cache: true,
+                    newel: false,
+                    select_all_text: "select"
+                });
+            });
+        </script>
+        </p>
+        <p>
+          <label>Brands</label>
+          <input type="hidden" value="{{ form.Brands.value|default_if_none:0 }}" name="Brands" maxlength="100" id="id_Brands">
+          <select id="brands" name="brands">
+          </select>
+          <script type="text/javascript">
+            $(document).ready(function(){                
+                //#brands
+                /*$("#brands").fcbkcomplete({
+                    //json_url: "{{ STATIC_URL }}data/brands_data.txt",
+                    addontab: true,
+                    //maxitems: 100,
+                    input_min_size: 0,
+                    height: 10,
+                    width: 315,
+                    filter_selected: true,
+                    addontab: true,
+                    cache: true,
+                    newel: false,
+                    select_all_text: "select"
+                });*/
+
+                var url = "{% url 'bshopper_app.views.user_setting_ajax_get_Manufacturer' %}";
+                ajax_req = $.ajax({
+                    url: url,
+                    type: "POST",
+                    data: {
+                    },
+                    success: function(data){
+                        if(data.return_code == "success")
+                        {
+                            $("#brands").html(data.result);
+
+                            $("#brands").fcbkcomplete({
+                                //json_url: "{{ STATIC_URL }}data/brands_data.txt",
+                                addontab: true,
+                                maxitems: 1000,
+                                input_min_size: 0,
+                                height: 10,
+                                width: 315,
+                                filter_selected: true,
+                                addontab: true,
+                                cache: true,
+                                newel: false,
+                                select_all_text: "select"
+                            });
+                        }
+                        else
+                        {
+                            alert(data.return_code);
+                        }
+                    },
+                    error: function(data){
+                        alert("error occured!");
+                    }
+                });
+
+            });
+        </script>
+        </p>
+        <p class="user_profile_pic">
+            <label>Profile Picture</label>
+            <span class="user_profile_pic_right">
+              <span class="row">
+                {% if form.ProfilePicturePath.value|length > 0 %}
+                <img class="user_profile_pic_img" src="{{ MEDIA_URL }}{{ form.ProfilePicturePath.value }}" alt=""/>
+                {% else %}
+                <label class="user_profile_pic_empty_label">Empty</label>
+                {% endif %}
+              </span>
+              <span class="row">
+                <label class="user_profile_pic_clear_label" for="ProfilePicturePath-clear_id">Clear</label>
+                <input type="checkbox" name="ProfilePicturePath-clear" id="ProfilePicturePath-clear_id">
+              </span>
+              <span class="row">
+                <label class="user_profile_pic_change_label">Change</label>
+                <input id="id_ProfilePicturePath" name="ProfilePicturePath" type="file">
+              </span>
+            </span>
+        </p>
+        <p>
+          <label>&nbsp;</label>
+          <input type="submit" name="submit" value="Save Changes" class="btn btn-orange" />
+        </p>
+       </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!--bodyarea ends-->
+<div class="clear"></div>
+<!--footer starts here-->
+<div class="footer">
+  <div class="copyright">Copyright&copy; All Rights Reserved.</div>
+  <div class="footer_link"><a href="#">Home</a> <a href="#">About</a> <a href="#">Products</a> <a href="#">Services</a> <a href="#">Contact</a> </div>
+</div>
+<!--footer ends here-->
+{% endblock %}
+{% block footer_js %}
+<script type="text/javascript">
+{% if successfully_saved == 1 %}
+var startTime = new Date().getTime();
+var interval = setInterval(function(){
+    $("#id_success_msg").css('display','none');
+    if(new Date().getTime() - startTime > 50000){
+        clearInterval(interval);
+        return;
+    }
+    //do whatever here..
+}, 4000);
+{% endif %}
+</script>
+{% endblock %}
